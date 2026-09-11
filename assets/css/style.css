@@ -94,7 +94,7 @@ p{ margin:0; }
 }
 .section-sub{ color:var(--ink-soft); margin-top:14px; max-width:480px; }
 .section-head.center .section-sub{ margin-inline:auto; }
-h2{ font-size:clamp(1.9rem, 3.6vw, 2.9rem); margin:0; text-wrap:balance; color:var(--ink); }
+h2{ font-size:clamp(1.9rem, 3.6vw, 2.9rem); margin:0; text-wrap:balance; color:var(--red); }
 
 /* =========================================================
    Reveal-on-scroll
@@ -232,11 +232,6 @@ h2{ font-size:clamp(1.9rem, 3.6vw, 2.9rem); margin:0; text-wrap:balance; color:v
 .hero-rating strong{ font-family:'Fraunces',serif; font-size:1.05rem; }
 .hero-rating .dim{ color:var(--cream-dim); font-size:.92rem; }
 .hero-cta{ display:flex; align-items:center; gap:26px; flex-wrap:wrap; margin-top:38px; }
-.hero-cta-link{
-  color:var(--cream); text-decoration:none; font-weight:600; font-size:.92rem;
-  border-bottom:1px solid rgba(243,234,217,0.4); padding-bottom:3px; transition:border-color .25s var(--ease);
-}
-.hero-cta-link:hover{ border-color:var(--cream); }
 
 .scroll-cue{
   position:absolute; bottom:34px; left:50%; transform:translateX(-50%); z-index:1;
@@ -379,7 +374,7 @@ h2{ font-size:clamp(1.9rem, 3.6vw, 2.9rem); margin:0; text-wrap:balance; color:v
 }
 .reserve-section .eyebrow{ color:var(--gold); }
 .reserve-inner{ max-width:620px; margin:0 auto; }
-.reserve-inner h2{ font-size:clamp(2.2rem, 5vw, 3.4rem); margin-top:6px; color:var(--cream); }
+.reserve-inner h2{ font-size:clamp(2.2rem, 5vw, 3.4rem); margin-top:6px; color:var(--red); }
 .reserve-inner p{ color:rgba(243,234,217,0.85); margin-top:20px; }
 .reserve-alt{ display:flex; gap:34px; justify-content:center; flex-wrap:wrap; }
 .reserve-alt a{
@@ -415,7 +410,7 @@ h2{ font-size:clamp(1.9rem, 3.6vw, 2.9rem); margin:0; text-wrap:balance; color:v
   max-width:1280px; margin:0 auto; padding:0 24px 120px;
   display:grid; grid-template-columns:1fr 1fr; gap:70px; align-items:center;
 }
-.location-copy h2{ font-size:clamp(2.2rem, 5vw, 3.2rem); margin-top:6px; letter-spacing:.04em; color:var(--ink); }
+.location-copy h2{ font-size:clamp(2.2rem, 5vw, 3.2rem); margin-top:6px; letter-spacing:.04em; color:var(--red); }
 .location-sub{ color:var(--red); margin-top:8px; font-family:'Fraunces',serif; font-style:italic; font-size:1.1rem; }
 .location-list{ margin:34px 0; display:flex; flex-direction:column; gap:20px; }
 .location-list dt{ color:var(--forest); font-size:.7rem; text-transform:uppercase; letter-spacing:.12em; font-weight:700; margin-bottom:5px; }
