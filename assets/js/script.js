@@ -48,6 +48,13 @@ mobileMenu.querySelectorAll('a').forEach(a => {
     document.body.style.overflow = '';
   });
 });
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 720 && mobileMenu.classList.contains('open')) {
+    mobileMenu.classList.remove('open');
+    burger.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+});
 
 /* ---------- Reveal on scroll ---------- */
 const revealTargets = document.querySelectorAll('.reveal');
@@ -72,8 +79,9 @@ const lightboxClose = document.getElementById('lightboxClose');
 
 document.querySelectorAll('.gallery-tile').forEach(tile => {
   tile.addEventListener('click', () => {
-    const variant = [...tile.classList].find(c => c.startsWith('illo-panel--')) || '';
-    lightboxPanel.innerHTML = `<div class="illo-panel ${variant}">${tile.innerHTML}</div>`;
+    const img = tile.querySelector('img');
+    lightboxPanel.innerHTML = '';
+    if (img) lightboxPanel.appendChild(img.cloneNode(true));
     lightbox.hidden = false;
     document.body.style.overflow = 'hidden';
   });

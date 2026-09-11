@@ -82,45 +82,28 @@
       </button>
     </div>
   </div>
-
-  <div class="mobile-menu" id="mobileMenu">
-    <nav aria-label="Navegación móvil">
-      <a href="#top" data-i18n="nav.home">Inicio</a>
-      <a href="#cocina" data-i18n="nav.kitchen">Nuestra cocina</a>
-      <a href="#carta" data-i18n="nav.menu">Carta</a>
-      <a href="#galeria" data-i18n="nav.gallery">Galería</a>
-      <a href="#contacto" data-i18n="nav.contact">Contacto</a>
-    </nav>
-    <div class="mobile-menu-footer">
-      <a class="btn btn-primary" href="tel:+34685544753" data-i18n="nav.reserve">Reservar</a>
-      <a href="tel:+34685544753">685 54 47 53</a>
-    </div>
-  </div>
 </header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <nav aria-label="Navegación móvil">
+    <a href="#top" data-i18n="nav.home">Inicio</a>
+    <a href="#cocina" data-i18n="nav.kitchen">Nuestra cocina</a>
+    <a href="#carta" data-i18n="nav.menu">Carta</a>
+    <a href="#galeria" data-i18n="nav.gallery">Galería</a>
+    <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+  </nav>
+  <div class="mobile-menu-footer">
+    <a class="btn btn-primary" href="tel:+34685544753" data-i18n="nav.reserve">Reservar</a>
+    <a href="tel:+34685544753">685 54 47 53</a>
+  </div>
+</div>
 
 <main id="main">
 
   <!-- HERO -->
   <section class="hero" id="top">
     <div class="hero-media" aria-hidden="true">
-      <svg class="hero-illustration" viewBox="0 0 800 460" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <radialGradient id="heroFlameGrad" cx="50%" cy="100%" r="75%">
-            <stop offset="0%" stop-color="#f2b23c" stop-opacity="0.9"/>
-            <stop offset="45%" stop-color="#ac2b1e" stop-opacity="0.55"/>
-            <stop offset="100%" stop-color="#7a1f12" stop-opacity="0"/>
-          </radialGradient>
-        </defs>
-        <ellipse cx="400" cy="420" rx="360" ry="130" fill="url(#heroFlameGrad)"/>
-        <ellipse cx="400" cy="328" rx="230" ry="46" fill="#2a2018" stroke="#e0b158" stroke-width="4" opacity="1"/>
-        <ellipse cx="370" cy="298" rx="110" ry="26" fill="none" stroke="#f3ead9" stroke-width="4" opacity=".95"/>
-        <ellipse cx="392" cy="282" rx="100" ry="24" fill="none" stroke="#f3ead9" stroke-width="4" opacity=".85"/>
-        <ellipse cx="408" cy="268" rx="90" ry="22" fill="none" stroke="#f3ead9" stroke-width="4" opacity=".75"/>
-        <path d="M180 260c-20 20-24 55-8 78 14 20 40 24 56 8 14-14 12-38-4-54-4 20-18 24-26 16 10-12 8-30-4-42-6-6-10-6-14-6z" fill="none" stroke="#e0552f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M180 260c-6-10-2-22 8-26" fill="none" stroke="#6ba873" stroke-width="6" stroke-linecap="round"/>
-        <path d="M620 300c18 16 24 46 10 66-12 18-34 20-48 6-12-12-10-32 4-46-2 16 10 20 18 12-8-10-6-26 4-36 4-4 8-4 12-2z" fill="none" stroke="#e0552f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M620 300c4-8 0-18-8-22" fill="none" stroke="#6ba873" stroke-width="6" stroke-linecap="round"/>
-      </svg>
+      <img class="hero-photo" src="assets/img/hero-nachos.jpg" alt="" loading="eager" fetchpriority="high" decoding="async">
       <div class="hero-scrim"></div>
       <div class="hero-grain"></div>
     </div>
@@ -194,16 +177,7 @@
   <section class="identity" id="cocina">
     <div class="identity-inner">
       <div class="identity-media reveal">
-        <div class="illo-panel illo-panel--charcoal">
-          <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <ellipse cx="100" cy="120" rx="72" ry="18" stroke="currentColor" stroke-width="4" opacity=".9"/>
-            <ellipse cx="88" cy="104" rx="34" ry="10" stroke="currentColor" stroke-width="3.5" opacity=".8"/>
-            <ellipse cx="102" cy="94" rx="26" ry="8" stroke="currentColor" stroke-width="3.5" opacity=".6"/>
-            <path d="M45 130c-6 14 2 26 14 26M155 130c6 14-2 26-14 26" stroke="#ac2b1e" stroke-width="4" stroke-linecap="round"/>
-            <path d="M60 150c14 22 66 22 80 0" stroke="#c79a45" stroke-width="3.5" stroke-linecap="round" opacity=".7"/>
-          </svg>
-          <span class="illo-panel-label" data-i18n="identity.photoLabel">Mole hecho a mano, a fuego lento</span>
-        </div>
+        <img src="assets/img/identity-tacos.jpg" alt="Tacos hechos a mano en El Comal" loading="lazy" decoding="async">
       </div>
 
       <div class="identity-copy">
@@ -230,9 +204,9 @@
 
     <div class="dish-grid">
       <article class="dish-card reveal">
-        <div class="dish-photo illo-panel illo-panel--red">
-          <svg viewBox="0 0 120 120" fill="none"><path d="M15 70a45 30 0 0190 0" stroke="currentColor" stroke-width="6" stroke-linecap="round"/><path d="M20 68c8-6 16-9 40-9s32 3 40 9" stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity=".7"/><circle cx="45" cy="60" r="3" fill="currentColor"/><circle cx="60" cy="56" r="3" fill="currentColor"/><circle cx="75" cy="61" r="3" fill="currentColor"/><path d="M55 30l5-14 5 14z" fill="currentColor" opacity=".8"/></svg>
-          <span class="illo-panel-label" data-i18n="dishes.pastor.tag">Al carbón</span>
+        <div class="dish-photo">
+          <img src="assets/img/dish-pastor.jpg" alt="Tacos al pastor de El Comal" loading="lazy" decoding="async">
+          <span class="dish-tag" data-i18n="dishes.pastor.tag">Al carbón</span>
         </div>
         <div class="dish-info">
           <h3 data-i18n="dishes.pastor.name">Tacos al pastor</h3>
@@ -241,9 +215,9 @@
       </article>
 
       <article class="dish-card reveal">
-        <div class="dish-photo illo-panel illo-panel--forest">
-          <svg viewBox="0 0 120 120" fill="none"><path d="M20 55h80a40 25 0 01-80 0z" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/><path d="M35 40q5-10 15-4M55 36q5-10 15-4M75 40q5-10 15-4" stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity=".6"/></svg>
-          <span class="illo-panel-label" data-i18n="dishes.birria.tag">El favorito de la casa</span>
+        <div class="dish-photo">
+          <img src="assets/img/dish-birria.jpg" alt="Tostadas de birria de El Comal" loading="lazy" decoding="async">
+          <span class="dish-tag" data-i18n="dishes.birria.tag">El favorito de la casa</span>
         </div>
         <div class="dish-info">
           <h3 data-i18n="dishes.birria.name">Tacos de birria</h3>
@@ -252,9 +226,9 @@
       </article>
 
       <article class="dish-card reveal">
-        <div class="dish-photo illo-panel illo-panel--gold">
-          <svg viewBox="0 0 120 120" fill="none"><circle cx="60" cy="60" r="35" stroke="currentColor" stroke-width="6"/><path d="M60 25v70M60 25a35 35 0 0130 52M60 25a35 35 0 00-30 52M60 95a35 35 0 0030-13M60 95a35 35 0 01-30-13" stroke="currentColor" stroke-width="3" opacity=".6"/></svg>
-          <span class="illo-panel-label" data-i18n="dishes.cochinita.tag">Tradición yucateca</span>
+        <div class="dish-photo">
+          <img src="assets/img/dish-cochinita.jpg" alt="Cochinita pibil de El Comal" loading="lazy" decoding="async">
+          <span class="dish-tag" data-i18n="dishes.cochinita.tag">Tradición yucateca</span>
         </div>
         <div class="dish-info">
           <h3 data-i18n="dishes.cochinita.name">Cochinita pibil</h3>
@@ -263,9 +237,9 @@
       </article>
 
       <article class="dish-card reveal">
-        <div class="dish-photo illo-panel illo-panel--charcoal">
-          <svg viewBox="0 0 120 120" fill="none"><path d="M25 45h70l-6 40a10 10 0 01-10 8H41a10 10 0 01-10-8z" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/><path d="M15 45h90" stroke="currentColor" stroke-width="6" stroke-linecap="round"/><path d="M50 30q5-12 10 0M65 30q5-12 10 0" stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity=".6"/></svg>
-          <span class="illo-panel-label" data-i18n="dishes.mole.tag">Receta ancestral</span>
+        <div class="dish-photo">
+          <img src="assets/img/dish-mole.jpg" alt="Mole tradicional de El Comal" loading="lazy" decoding="async">
+          <span class="dish-tag" data-i18n="dishes.mole.tag">Receta ancestral</span>
         </div>
         <div class="dish-info">
           <h3 data-i18n="dishes.mole.name">Mole tradicional</h3>
@@ -314,29 +288,17 @@
     </div>
 
     <div class="gallery-grid" id="galleryGrid">
-      <button class="gallery-tile illo-panel illo-panel--red span-tall reveal">
-        <svg viewBox="0 0 120 120" fill="none"><line x1="10" y1="20" x2="110" y2="20" stroke="currentColor" stroke-width="2" opacity=".6"/><path d="M15 20h30l-15 34z" fill="currentColor" opacity=".85"/><path d="M50 20h30l-15 34z" fill="currentColor" opacity=".55"/><path d="M85 20h25l-12 30z" fill="currentColor" opacity=".85"/></svg>
-        <span class="illo-panel-label" data-i18n="gallery.c1">Comedor con papel picado</span>
+      <button class="gallery-tile reveal">
+        <img src="assets/img/gallery-guacamole.jpg" alt="Guacamole casero de El Comal" loading="lazy" decoding="async">
+        <span class="gallery-tile-label" data-i18n="gallery.c1">Guacamole casero</span>
       </button>
-      <button class="gallery-tile illo-panel illo-panel--gold reveal">
-        <svg viewBox="0 0 120 120" fill="none"><line x1="10" y1="20" x2="110" y2="20" stroke="currentColor" stroke-width="2" opacity=".5"/><g stroke="currentColor" stroke-width="5" stroke-linecap="round"><path d="M25 20c-10 8-8 26 4 30 8 2 14-6 10-16-3-8-10-12-14-14z"/><path d="M55 20c-10 8-8 26 4 30 8 2 14-6 10-16-3-8-10-12-14-14z"/><path d="M85 20c-10 8-8 26 4 30 8 2 14-6 10-16-3-8-10-12-14-14z"/></g></svg>
-        <span class="illo-panel-label" data-i18n="gallery.c2">Ingredientes de temporada</span>
+      <button class="gallery-tile reveal">
+        <img src="assets/img/gallery-pastor-detail.jpg" alt="Detalle de tacos al pastor" loading="lazy" decoding="async">
+        <span class="gallery-tile-label" data-i18n="gallery.c2">Tacos al pastor</span>
       </button>
-      <button class="gallery-tile illo-panel illo-panel--paper reveal">
-        <svg viewBox="0 0 120 120" fill="none"><ellipse cx="60" cy="70" rx="45" ry="12" stroke="currentColor" stroke-width="6"/><ellipse cx="60" cy="58" rx="34" ry="9" stroke="currentColor" stroke-width="4" opacity=".7"/><ellipse cx="60" cy="48" rx="24" ry="7" stroke="currentColor" stroke-width="4" opacity=".5"/></svg>
-        <span class="illo-panel-label" data-i18n="gallery.c3">Tortillas recién prensadas</span>
-      </button>
-      <button class="gallery-tile illo-panel illo-panel--forest span-tall reveal">
-        <svg viewBox="0 0 120 120" fill="none"><path d="M60 100V55" stroke="currentColor" stroke-width="5"/><path d="M60 55c0-20-15-30-15-30M60 55c0-20 15-30 15-30M60 55c-5-22-25-28-25-25M60 55c5-22 25-28 25-25" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><path d="M40 100h40l-4 10H44z" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/></svg>
-        <span class="illo-panel-label" data-i18n="gallery.c4">Micheladas y margaritas</span>
-      </button>
-      <button class="gallery-tile illo-panel illo-panel--charcoal reveal">
-        <svg viewBox="0 0 120 120" fill="none"><path d="M20 55a40 25 0 0080 0" stroke="currentColor" stroke-width="6" stroke-linecap="round"/><ellipse cx="60" cy="55" rx="40" ry="10" stroke="currentColor" stroke-width="6"/><circle cx="50" cy="52" r="3" fill="currentColor"/><circle cx="62" cy="50" r="3" fill="currentColor"/><circle cx="70" cy="54" r="3" fill="currentColor"/><path d="M75 35l15-15" stroke="currentColor" stroke-width="6" stroke-linecap="round"/></svg>
-        <span class="illo-panel-label" data-i18n="gallery.c5">Detalles de la casa</span>
-      </button>
-      <button class="gallery-tile illo-panel illo-panel--paper reveal">
-        <svg viewBox="0 0 120 120" fill="none"><path d="M60 100V50" stroke="currentColor" stroke-width="8" stroke-linecap="round"/><ellipse cx="60" cy="42" rx="20" ry="26" stroke="currentColor" stroke-width="6"/><ellipse cx="35" cy="65" rx="16" ry="20" stroke="currentColor" stroke-width="6" transform="rotate(-20 35 65)"/><ellipse cx="85" cy="65" rx="16" ry="20" stroke="currentColor" stroke-width="6" transform="rotate(20 85 65)"/></svg>
-        <span class="illo-panel-label" data-i18n="gallery.c6">Terraza interior</span>
+      <button class="gallery-tile reveal">
+        <img src="assets/img/gallery-carnitas.jpg" alt="Tacos de carnitas de El Comal" loading="lazy" decoding="async">
+        <span class="gallery-tile-label" data-i18n="gallery.c3">Tacos de carnitas</span>
       </button>
     </div>
   </section>
