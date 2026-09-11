@@ -3,22 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>El Comal Restaurante Mexicano | Calella, Barcelona</title>
-<meta name="description" content="El Comal Restaurante Mexicano en Calella (Barcelona). Cocina mexicana auténtica y casera: tacos, cochinita pibil, mole, micheladas y postres artesanos. Valorado con 4,8/5 en Google (128 reseñas).">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌮</text></svg>">
+<title>El Comal — Cocina Ancestral Oaxaqueña | Calella, Barcelona</title>
+<meta name="description" content="El Comal, restaurante mexicano en Calella (Barcelona). Cocina ancestral oaxaqueña, tortillas artesanales y recetas de generaciones. Valorado con 4,8/5 en Google (128 reseñas). Reserva tu mesa.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://elcomal.restaurant/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="restaurant.restaurant">
+<meta property="og:title" content="El Comal — Cocina Ancestral Oaxaqueña">
+<meta property="og:description" content="Tortillas artesanales, moles de generaciones y cocina mexicana auténtica en Calella, Barcelona. 4,8★ en Google (128 reseñas).">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="ca_ES">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:site_name" content="El Comal">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌶️</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340;0,9..144,480;0,9..144,600;1,9..144,440&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "MexicanRestaurant",
-  "name": "El Comal Restaurante Mexicano",
-  "image": "",
+  "name": "El Comal",
   "telephone": "+34685544753",
   "priceRange": "10-20 EUR",
-  "servesCuisine": "Mexicana",
+  "servesCuisine": ["Mexicana", "Oaxaqueña"],
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Carrer de la Riera, 16",
@@ -38,319 +51,449 @@
 </head>
 <body>
 
-<div class="papel-border" aria-hidden="true"></div>
+<a class="skip-link" href="#main" data-i18n="a11y.skip">Ir al contenido</a>
 
-<header class="site-header" id="top">
-  <div class="container header-inner">
-    <a class="brand" href="#top">
-      <span class="brand-mark">🌵</span>
-      <span class="brand-text">El Comal<em>Restaurante Mexicano</em></span>
-    </a>
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a class="wordmark" href="#top">EL COMAL</a>
 
-    <nav class="main-nav" id="mainNav">
-      <a href="#sobre">Nosotros</a>
-      <a href="#menu">Menú</a>
-      <a href="#resenas">Reseñas</a>
-      <a href="#ubicacion">Ubicación</a>
-      <a href="#contacto">Contacto</a>
+    <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
+      <a href="#top" data-i18n="nav.home">Inicio</a>
+      <a href="#cocina" data-i18n="nav.kitchen">Nuestra cocina</a>
+      <a href="#carta" data-i18n="nav.menu">Carta</a>
+      <a href="#galeria" data-i18n="nav.gallery">Galería</a>
+      <a href="#contacto" data-i18n="nav.contact">Contacto</a>
     </nav>
 
-    <div class="header-actions">
-      <a class="btn btn-ghost" href="tel:+34685544753">📞 685 54 47 53</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+    <div class="navbar-actions">
+      <div class="lang-switch" id="langSwitch">
+        <button class="lang-current" id="langCurrent" aria-haspopup="listbox" aria-expanded="false">ES</button>
+        <ul class="lang-menu" id="langMenu" role="listbox">
+          <li role="option" data-lang="es">Español</li>
+          <li role="option" data-lang="ca">Català</li>
+          <li role="option" data-lang="en">English</li>
+          <li role="option" data-lang="fr">Français</li>
+        </ul>
+      </div>
+      <a class="btn btn-primary btn-sm" href="tel:+34685544753" data-i18n="nav.reserve">Reservar</a>
+      <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <nav aria-label="Navegación móvil">
+      <a href="#top" data-i18n="nav.home">Inicio</a>
+      <a href="#cocina" data-i18n="nav.kitchen">Nuestra cocina</a>
+      <a href="#carta" data-i18n="nav.menu">Carta</a>
+      <a href="#galeria" data-i18n="nav.gallery">Galería</a>
+      <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+    </nav>
+    <div class="mobile-menu-footer">
+      <a class="btn btn-primary" href="tel:+34685544753" data-i18n="nav.reserve">Reservar</a>
+      <a href="tel:+34685544753">685 54 47 53</a>
+    </div>
+  </div>
 </header>
 
-<main>
+<main id="main">
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="hero-pattern" aria-hidden="true"></div>
-    <div class="container hero-inner">
-      <p class="eyebrow">Calella · Barcelona</p>
-      <h1>Oaxaca en cada detalle.<br>Tortilla artesana, alma mexicana.</h1>
-      <p class="hero-sub">Prueba lo hecho por quien mejor conoce el sabor. Cocina mexicana 100% casera, sin precocinados, servida en un patio con encanto a dos pasos del mar.</p>
+  <section class="hero" id="top">
+    <div class="hero-media" aria-hidden="true">
+      <div class="hero-photo hero-photo--fire"></div>
+      <div class="hero-scrim"></div>
+      <div class="hero-grain"></div>
+    </div>
 
-      <div class="hero-cta">
-        <a class="btn btn-primary" href="tel:+34685544753">Reservar mesa</a>
-        <a class="btn btn-outline" href="#menu">Ver el menú</a>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal" data-i18n="hero.eyebrow">Calella · Barcelona</p>
+      <h1 class="hero-title reveal">EL COMAL</h1>
+      <p class="hero-kicker reveal" data-i18n="hero.kicker">Cocina ancestral oaxaqueña</p>
+      <p class="hero-tagline reveal" data-i18n="hero.tagline">El fuego, la tortilla y la paciencia de Oaxaca, servidos frente al Maresme.</p>
+
+      <div class="hero-cta reveal">
+        <a class="btn btn-primary btn-lg" href="tel:+34685544753" data-i18n="hero.cta1">Reservar mesa</a>
+        <a class="btn btn-outline btn-lg" href="#carta" data-i18n="hero.cta2">Ver la carta</a>
       </div>
+    </div>
 
-      <div class="hero-meta">
-        <div class="rating-badge">
-          <span class="stars" aria-hidden="true">★★★★★</span>
-          <span class="rating-number">4,8</span>
-          <span class="rating-count">· 128 reseñas de Google</span>
-        </div>
-        <div class="status-badge" id="statusBadge">
-          <span class="dot"></span>
-          <span id="statusText">Comprueba el horario de hoy</span>
-        </div>
+    <a class="scroll-cue" href="#cocina" aria-label="Bajar a la siguiente sección">
+      <span data-i18n="hero.scroll">Descubre</span>
+      <svg width="14" height="22" viewBox="0 0 14 22" fill="none"><path d="M7 0v20M1 14l6 6 6-6" stroke="currentColor" stroke-width="1.4" fill="none"/></svg>
+    </a>
+  </section>
+
+  <!-- STATS STRIP -->
+  <section class="stats-strip">
+    <div class="stats-inner">
+      <div class="stat">
+        <strong>4,8<span>/5</span></strong>
+        <span data-i18n="stats.rating">Valoración en Google</span>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div class="stat">
+        <strong>128</strong>
+        <span data-i18n="stats.reviews">Reseñas reales</span>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div class="stat">
+        <strong data-i18n="stats.handmadeNum">100%</strong>
+        <span data-i18n="stats.handmade">Cocina hecha a mano</span>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div class="stat">
+        <strong>08370</strong>
+        <span data-i18n="stats.location">Calella, Barcelona</span>
       </div>
     </div>
   </section>
 
-  <!-- INFO STRIP -->
-  <section class="info-strip">
-    <div class="container info-grid">
-      <div class="info-item">
-        <span class="info-icon">📍</span>
-        <div>
-          <strong>Carrer de la Riera, 16</strong>
-          <span>08370 Calella, Barcelona</span>
+  <!-- IDENTITY / COCINA -->
+  <section class="identity" id="cocina">
+    <div class="identity-inner">
+      <div class="identity-media reveal">
+        <div class="photo-panel photo-panel--metate">
+          <span class="photo-panel-label" data-i18n="identity.photoLabel">Mole hecho a mano, a fuego lento</span>
         </div>
       </div>
-      <div class="info-item">
-        <span class="info-icon">🕖</span>
-        <div>
-          <strong>Abre a las 19:00</strong>
-          <span>El horario puede variar en Día de Cataluña</span>
-        </div>
-      </div>
-      <div class="info-item">
-        <span class="info-icon">💶</span>
-        <div>
-          <strong>10 – 20 €</strong>
-          <span>Precio aproximado por persona</span>
-        </div>
-      </div>
-      <div class="info-item">
-        <span class="info-icon">🥑</span>
-        <div>
-          <strong>Comer allí · Para llevar</strong>
-          <span>Opciones vegetarianas y veganas (Heura)</span>
-        </div>
+
+      <div class="identity-copy">
+        <p class="eyebrow reveal" data-i18n="identity.eyebrow">Nuestra cocina</p>
+        <h2 class="reveal" data-i18n-html="identity.title">Cocina oaxaqueña.<br><em>Hecha con alma.</em></h2>
+        <p class="identity-lead reveal" data-i18n="identity.lead">En El Comal no entran precocinados ni atajos. Cada tortilla se prensa a mano con maíz nixtamalizado, cada mole se cuece a fuego lento durante horas, y cada receta respeta la memoria de quien la enseñó.</p>
+        <p class="reveal" data-i18n="identity.body">Las manos detrás de El Comal llevan años dedicadas a la gastronomía mexicana en Calella. Este proyecto es su versión más cuidada: un espacio donde Oaxaca se siente en cada plato, desde la primera salsa hasta el último bocado de postre.</p>
+
+        <ul class="identity-details reveal">
+          <li><span data-i18n="identity.d1">Tortilla de maíz nixtamalizado, prensada a diario</span></li>
+          <li><span data-i18n="identity.d2">Moles y salsas cocinados a fuego lento</span></li>
+          <li><span data-i18n="identity.d3">Recetas transmitidas de generación en generación</span></li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- SOBRE NOSOTROS -->
-  <section class="section" id="sobre">
-    <div class="container about-grid">
-      <div class="about-text">
-        <p class="eyebrow">Nuestra historia</p>
-        <h2>Comida casera, sin atajos</h2>
-        <p>En El Comal no hay precocinados ni fabricados: cada salsa, cada tortilla y cada postre se elabora a mano, con las horas de cocción que cada receta pide de verdad. Las propietarias llevan años dedicadas a la gastronomía mexicana en Calella, y este proyecto es la versión más cuidada de ese camino.</p>
-        <p>El resultado, según quienes nos visitan, son sabores auténticos y equilibrados: desde la birria y la cochinita pibil hasta el mole, pasando por tartas caseras y aguas frescas de jamaica y tamarindo.</p>
+  <!-- PLATOS DESTACADOS -->
+  <section class="dishes" id="destacados">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="dishes.eyebrow">Nuestros favoritos</p>
+      <h2 data-i18n="dishes.title">Lo que tienes que probar</h2>
+    </div>
 
-        <ul class="about-tags">
-          <li>♿ Acceso y asientos adaptados</li>
-          <li>👨‍👩‍👧 Ideal para grupos y familias</li>
-          <li>🌱 Platos vegetarianos y veganos</li>
-          <li>☕ Buen café</li>
-          <li>🍷 Vino, cerveza y licores</li>
-          <li>💳 Tarjeta, débito y pago móvil (NFC)</li>
+    <div class="dish-grid">
+      <article class="dish-card reveal">
+        <div class="dish-photo photo-panel photo-panel--pastor">
+          <span class="photo-panel-label" data-i18n="dishes.pastor.tag">Al carbón</span>
+        </div>
+        <div class="dish-info">
+          <h3 data-i18n="dishes.pastor.name">Tacos al pastor</h3>
+          <p data-i18n="dishes.pastor.desc">Cerdo marinado en achiote y especias, piña asada, cilantro y cebolla sobre tortilla de maíz.</p>
+        </div>
+      </article>
+
+      <article class="dish-card reveal">
+        <div class="dish-photo photo-panel photo-panel--birria">
+          <span class="photo-panel-label" data-i18n="dishes.birria.tag">El favorito de la casa</span>
+        </div>
+        <div class="dish-info">
+          <h3 data-i18n="dishes.birria.name">Tacos de birria</h3>
+          <p data-i18n="dishes.birria.desc">Cocción lenta, consomé para mojar y queso fundido. Uno de los platos más pedidos de la carta.</p>
+        </div>
+      </article>
+
+      <article class="dish-card reveal">
+        <div class="dish-photo photo-panel photo-panel--cochinita">
+          <span class="photo-panel-label" data-i18n="dishes.cochinita.tag">Tradición yucateca</span>
+        </div>
+        <div class="dish-info">
+          <h3 data-i18n="dishes.cochinita.name">Cochinita pibil</h3>
+          <p data-i18n="dishes.cochinita.desc">Cerdo marinado en achiote, cebolla morada encurtida y un toque cítrico.</p>
+        </div>
+      </article>
+
+      <article class="dish-card reveal">
+        <div class="dish-photo photo-panel photo-panel--mole">
+          <span class="photo-panel-label" data-i18n="dishes.mole.tag">Receta ancestral</span>
+        </div>
+        <div class="dish-info">
+          <h3 data-i18n="dishes.mole.name">Mole tradicional</h3>
+          <p data-i18n="dishes.mole.desc">Decenas de ingredientes y horas de cocción para un sabor complejo y profundamente oaxaqueño.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- EXPERIENCIA -->
+  <section class="experience">
+    <div class="section-head reveal center">
+      <p class="eyebrow" data-i18n="experience.eyebrow">La experiencia El Comal</p>
+      <h2 data-i18n="experience.title">Más que una comida.</h2>
+    </div>
+
+    <div class="experience-grid">
+      <div class="experience-item reveal">
+        <span class="experience-mark" aria-hidden="true">◆</span>
+        <h3 data-i18n="experience.i1.title">Tortilla artesanal</h3>
+        <p data-i18n="experience.i1.desc">Prensada a mano cada día, sin conservantes ni procesos industriales.</p>
+      </div>
+      <div class="experience-item reveal">
+        <span class="experience-mark" aria-hidden="true">◆</span>
+        <h3 data-i18n="experience.i2.title">Ingredientes auténticos</h3>
+        <p data-i18n="experience.i2.desc">Chiles, especias y técnicas traídas directamente de la tradición mexicana.</p>
+      </div>
+      <div class="experience-item reveal">
+        <span class="experience-mark" aria-hidden="true">◆</span>
+        <h3 data-i18n="experience.i3.title">Cocina oaxaqueña</h3>
+        <p data-i18n="experience.i3.desc">Moles, salsas y recetas propias del sur de México, poco frecuentes en la costa catalana.</p>
+      </div>
+      <div class="experience-item reveal">
+        <span class="experience-mark" aria-hidden="true">◆</span>
+        <h3 data-i18n="experience.i4.title">Hecho a mano</h3>
+        <p data-i18n="experience.i4.desc">Sin precocinados: cada salsa, cada postre y cada tortilla nace en nuestra cocina.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section class="gallery" id="galeria">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="gallery.eyebrow">Un vistazo por dentro</p>
+      <h2 data-i18n="gallery.title">Galería</h2>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <button class="gallery-tile photo-panel photo-panel--interior span-tall reveal" data-caption-key="gallery.c1">
+        <span class="photo-panel-label" data-i18n="gallery.c1">Comedor con papel picado</span>
+      </button>
+      <button class="gallery-tile photo-panel photo-panel--ingredients reveal" data-caption-key="gallery.c2">
+        <span class="photo-panel-label" data-i18n="gallery.c2">Ingredientes de temporada</span>
+      </button>
+      <button class="gallery-tile photo-panel photo-panel--tortillas reveal" data-caption-key="gallery.c3">
+        <span class="photo-panel-label" data-i18n="gallery.c3">Tortillas recién prensadas</span>
+      </button>
+      <button class="gallery-tile photo-panel photo-panel--drinks span-tall reveal" data-caption-key="gallery.c4">
+        <span class="photo-panel-label" data-i18n="gallery.c4">Micheladas y margaritas</span>
+      </button>
+      <button class="gallery-tile photo-panel photo-panel--detail reveal" data-caption-key="gallery.c5">
+        <span class="photo-panel-label" data-i18n="gallery.c5">Detalles de la casa</span>
+      </button>
+      <button class="gallery-tile photo-panel photo-panel--terrace reveal" data-caption-key="gallery.c6">
+        <span class="photo-panel-label" data-i18n="gallery.c6">Terraza interior</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- CARTA -->
+  <section class="menu-section" id="carta">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="menu.eyebrow">La carta</p>
+      <h2 data-i18n="menu.title">Sabores de nuestra cocina</h2>
+      <p class="section-sub" data-i18n="menu.sub">Una selección de nuestros platos. Carta completa y precios actualizados disponibles en el restaurante.</p>
+    </div>
+
+    <div class="menu-columns">
+      <div class="menu-col reveal">
+        <h3 data-i18n="menu.cat.starters">Antojitos</h3>
+        <ul>
+          <li><span data-i18n="menu.item.totopos">Totopos mixtecos</span></li>
+          <li><span data-i18n="menu.item.guac">Guacamole casero</span></li>
+          <li><span data-i18n="menu.item.nachos">Nachos El Comal</span></li>
+          <li><span data-i18n="menu.item.quesadillas">Quesadillas</span></li>
         </ul>
       </div>
 
-      <div class="about-highlight">
-        <blockquote>
-          "Comida realmente buena, precio muy competitivo, ración generosa... camareros muy amables y atentos, 10/10."
-          <cite>— Carlos Fernández, Google</cite>
-        </blockquote>
-        <blockquote>
-          "Los tacos de birria son los mejores que he probado. No os podéis ir sin probar las tartas caseras."
-          <cite>— LEI, Local Guide</cite>
-        </blockquote>
+      <div class="menu-col reveal">
+        <h3 data-i18n="menu.cat.tacos">Tacos</h3>
+        <ul>
+          <li><span data-i18n="menu.item.tacoPastor">Tacos al pastor</span></li>
+          <li><span data-i18n="menu.item.tacoBirria">Tacos de birria</span></li>
+          <li><span data-i18n="menu.item.tacoArrachera">Tacos de arrachera</span></li>
+          <li><span data-i18n="menu.item.tacoCostilla">Tacos de costilla y barbacoa</span></li>
+        </ul>
       </div>
+
+      <div class="menu-col reveal">
+        <h3 data-i18n="menu.cat.specialties">Especialidades</h3>
+        <ul>
+          <li><span data-i18n="menu.item.cochinita">Cochinita pibil</span></li>
+          <li><span data-i18n="menu.item.burrito">Burrito Chihuahua</span></li>
+          <li><span data-i18n="menu.item.mole">Mole tradicional</span></li>
+          <li><span data-i18n="menu.item.enchiladas">Enchiladas verdes</span></li>
+          <li><span data-i18n="menu.item.codillo">Codillo</span></li>
+          <li><span data-i18n="menu.item.ceviche">Ceviche</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-col reveal">
+        <h3 data-i18n="menu.cat.drinks">Bebidas</h3>
+        <ul>
+          <li><span data-i18n="menu.item.michelada">Micheladas</span></li>
+          <li><span data-i18n="menu.item.margarita">Margaritas</span></li>
+          <li><span data-i18n="menu.item.mezcal">Mezcal</span></li>
+          <li><span data-i18n="menu.item.agua">Agua de jamaica y tamarindo</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-col reveal">
+        <h3 data-i18n="menu.cat.desserts">Postres</h3>
+        <ul>
+          <li><span data-i18n="menu.item.elote">Pastel de elote</span></li>
+          <li><span data-i18n="menu.item.treleches">Pastel de tres leches</span></li>
+          <li><span data-i18n="menu.item.sorbetes">Sorbetes de la casa</span></li>
+        </ul>
+      </div>
+
+      <div class="menu-col menu-col--note reveal">
+        <h3 data-i18n="menu.cat.forAll">Para todos</h3>
+        <p data-i18n="menu.note">Todos los platos se pueden preparar en versión vegetariana o vegana con Heura. Consulta alérgenos con el personal.</p>
+      </div>
+    </div>
+
+    <div class="menu-cta reveal">
+      <a class="btn btn-outline" href="tel:+34685544753" data-i18n="menu.cta">Ver carta completa</a>
     </div>
   </section>
 
-  <!-- MENU -->
-  <section class="section section-alt" id="menu">
-    <div class="container">
-      <p class="eyebrow center">Lo que no te puedes perder</p>
-      <h2 class="center">Sabores de nuestra carta</h2>
-      <p class="section-sub center">Una selección de los platos más pedidos y mejor valorados por nuestros comensales. Carta completa disponible en el restaurante.</p>
+  <!-- RESERVAS -->
+  <section class="reserve-section" id="reservar">
+    <div class="reserve-inner reveal">
+      <p class="eyebrow" data-i18n="reserve.eyebrow">Reservas</p>
+      <h2 data-i18n="reserve.title">Tu mesa te espera.</h2>
+      <p data-i18n="reserve.body">Sin reserva también te atendemos con gusto, pero para grupos y fines de semana te recomendamos avisar con antelación.</p>
 
-      <div class="menu-grid">
+      <a class="btn btn-primary btn-xl" href="tel:+34685544753" data-i18n="reserve.cta">Reservar mesa</a>
 
-        <div class="menu-card">
-          <h3>🌮 Antojitos &amp; Entrantes</h3>
-          <ul>
-            <li>Totopos mixtecos</li>
-            <li>Guacamole casero</li>
-            <li>Nachos El Comal</li>
-            <li>Quesadillas</li>
-          </ul>
-        </div>
-
-        <div class="menu-card featured">
-          <span class="chip">Los favoritos</span>
-          <h3>🌯 Tacos &amp; Especialidades</h3>
-          <ul>
-            <li>Tacos al pastor</li>
-            <li>Tacos de birria</li>
-            <li>Tacos de arrachera</li>
-            <li>Tacos de costilla y barbacoa</li>
-            <li>Cochinita pibil</li>
-            <li>Burrito Chihuahua</li>
-          </ul>
-        </div>
-
-        <div class="menu-card">
-          <h3>🍲 Platos de la casa</h3>
-          <ul>
-            <li>Mole tradicional</li>
-            <li>Enchiladas verdes</li>
-            <li>Codillo</li>
-            <li>Ceviche</li>
-          </ul>
-        </div>
-
-        <div class="menu-card">
-          <h3>🍹 Bebidas</h3>
-          <ul>
-            <li>Micheladas</li>
-            <li>Margaritas</li>
-            <li>Mezcal</li>
-            <li>Agua de jamaica y tamarindo</li>
-          </ul>
-        </div>
-
-        <div class="menu-card">
-          <h3>🍰 Postres caseros</h3>
-          <ul>
-            <li>Pastel de elote</li>
-            <li>Pastel de tres leches</li>
-            <li>Sorbetes de la casa</li>
-          </ul>
-        </div>
-
-        <div class="menu-card menu-note">
-          <h3>🌱 Para todos</h3>
-          <p>Todos los platos se pueden preparar en versión vegetariana o vegana con Heura. Consulta con el personal sobre alérgenos.</p>
-        </div>
-
+      <div class="reserve-alt">
+        <a href="https://wa.me/34685544753" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.28-1.39a9.9 9.9 0 0 0 4.76 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m0 1.67c2.24 0 4.35.87 5.93 2.46a8.3 8.3 0 0 1 2.45 5.92c0 4.61-3.76 8.36-8.38 8.36a8.4 8.4 0 0 1-4.27-1.16l-.3-.18-3.13.82.84-3.05-.2-.32a8.3 8.3 0 0 1-1.28-4.45c0-4.61 3.76-8.4 8.34-8.4m-4.6 4.32c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.03 0 1.2.87 2.35.99 2.51.12.16 1.7 2.71 4.2 3.71 2.07.84 2.5.67 2.95.63.45-.04 1.44-.59 1.64-1.16.2-.57.2-1.05.14-1.16-.06-.1-.22-.16-.46-.28-.24-.12-1.44-.71-1.66-.79-.22-.08-.38-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.44-1.34-1.68-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.35-.76-1.84-.2-.48-.4-.42-.55-.42h-.46Z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+        <a href="tel:+34685544753">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          <span data-i18n="reserve.call">685 54 47 53</span>
+        </a>
       </div>
     </div>
   </section>
 
   <!-- RESEÑAS -->
-  <section class="section" id="resenas">
-    <div class="container">
-      <p class="eyebrow center">Lo que dicen en Google</p>
-      <h2 class="center">4,8 de 5 · 128 reseñas</h2>
-      <p class="section-sub center">Una muestra real de las opiniones de nuestros clientes en Google Maps.</p>
-
-      <div class="reviews-grid">
-        <article class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p>"Sabrosa comida mexicana en Calella, tacos al pastor y de arrachera muy ricos, para repetir. Tiene una agradable terraza y un servicio muy amable."</p>
-          <footer>Nacho Giménez · Local Guide</footer>
-        </article>
-
-        <article class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p>"Comida mexicana deliciosa, se notan las horas de cocinado que hay detrás para obtener esos sabores tan especiales y auténticos."</p>
-          <footer>LEI · Local Guide</footer>
-        </article>
-
-        <article class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p>"ESPECTACULAR!! Muy recomendado. Los tacos barbacoa y el codillo son impecables (10/10)."</p>
-          <footer>Anamaría Terreros · Local Guide</footer>
-        </article>
-
-        <article class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p>"Auténtico restaurante mexicano, el mole estaba espectacular, la birria deliciosa y la salsa de cacahuate de las mejores que he probado, incluso en México."</p>
-          <footer>Barkeno Tours · Local Guide</footer>
-        </article>
-
-        <article class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p>"Como mexicana viviendo en Europa, puedo decir que este restaurante no es como cualquiera. Limpio, ordenado y con una atmósfera que invita a disfrutar la música mexicana de fondo."</p>
-          <footer>Cecy Rivera · Local Guide</footer>
-        </article>
-
-        <article class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p>"Cocina auténtica y deliciosa. Se nota muchísimo el cariño y la dedicación que ponen en cada plato. Un sitio para repetir sin duda."</p>
-          <footer>Sara · Local Guide</footer>
-        </article>
+  <section class="reviews">
+    <div class="section-head reveal center">
+      <p class="eyebrow" data-i18n="reviews.eyebrow">Reseñas reales de Google</p>
+      <div class="reviews-score">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <strong>4,8</strong>
+        <span data-i18n="reviews.count">/ 5 · 128 reseñas</span>
       </div>
+    </div>
 
-      <div class="reviews-cta">
-        <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=El+Comal+Restaurante+Mexicano+Carrer+de+la+Riera+16+Calella" target="_blank" rel="noopener">Ver todas las reseñas en Google Maps →</a>
-      </div>
+    <div class="reviews-editorial">
+      <blockquote class="reveal">
+        <p data-i18n="reviews.q1">"Los tacos de birria son los mejores que he probado. No os podéis ir sin probar las tartas caseras."</p>
+        <cite>LEI · Local Guide</cite>
+      </blockquote>
+      <blockquote class="reveal">
+        <p data-i18n="reviews.q2">"Auténtico restaurante mexicano, el mole estaba espectacular y la salsa de cacahuate, de las mejores que he probado, incluso en México."</p>
+        <cite>Barkeno Tours · Local Guide</cite>
+      </blockquote>
+      <blockquote class="reveal">
+        <p data-i18n="reviews.q3">"Comida realmente buena, precio muy competitivo... camareros muy amables y atentos, 10/10."</p>
+        <cite>Carlos Fernández</cite>
+      </blockquote>
+      <blockquote class="reveal">
+        <p data-i18n="reviews.q4">"Cocina auténtica y deliciosa. Se nota muchísimo el cariño y la dedicación que ponen en cada plato."</p>
+        <cite>Sara · Local Guide</cite>
+      </blockquote>
+    </div>
+
+    <div class="reviews-cta reveal">
+      <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=El+Comal+Restaurante+Mexicano+Carrer+de+la+Riera+16+Calella" target="_blank" rel="noopener" data-i18n="reviews.cta">Ver todas las reseñas en Google →</a>
     </div>
   </section>
 
   <!-- UBICACION -->
-  <section class="section section-alt" id="ubicacion">
-    <div class="container location-grid">
-      <div class="location-info">
-        <p class="eyebrow">Encuéntranos</p>
-        <h2>Te esperamos en Calella</h2>
+  <section class="location" id="contacto">
+    <div class="location-inner">
+      <div class="location-copy reveal">
+        <p class="eyebrow" data-i18n="location.eyebrow">Encuéntranos</p>
+        <h2>EL COMAL</h2>
+        <p class="location-sub" data-i18n="location.sub">Calella, Barcelona</p>
 
         <dl class="location-list">
           <div>
-            <dt>Dirección</dt>
+            <dt data-i18n="location.address">Dirección</dt>
             <dd>Carrer de la Riera, 16, 08370 Calella, Barcelona</dd>
           </div>
           <div>
-            <dt>Teléfono</dt>
+            <dt data-i18n="location.phone">Teléfono</dt>
             <dd><a href="tel:+34685544753">685 54 47 53</a></dd>
           </div>
           <div>
-            <dt>Horario</dt>
-            <dd>Abre a las 19:00 · El horario puede variar en Día de Cataluña. Te recomendamos llamar para confirmar disponibilidad o reservar.</dd>
-          </div>
-          <div>
-            <dt>Servicios</dt>
-            <dd>Comer allí, para llevar, terraza, aseos, acceso para sillas de ruedas.</dd>
-          </div>
-          <div>
-            <dt>Código Plus</dt>
-            <dd>JM74+9G Calella</dd>
+            <dt data-i18n="location.hours">Horario</dt>
+            <dd><span data-i18n="location.hoursValue">Abre a las 19:00 · El horario puede variar en Día de Cataluña</span></dd>
           </div>
         </dl>
 
-        <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&destination=Carrer+de+la+Riera+16+08370+Calella+Barcelona" target="_blank" rel="noopener">Cómo llegar</a>
+        <div class="location-actions">
+          <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&destination=Carrer+de+la+Riera+16+08370+Calella+Barcelona" target="_blank" rel="noopener" data-i18n="location.directions">Cómo llegar</a>
+          <a class="btn btn-outline" href="tel:+34685544753" data-i18n="location.reserve">Reservar</a>
+        </div>
       </div>
 
-      <div class="location-map">
+      <div class="location-map reveal">
         <iframe
-          title="Mapa de El Comal Restaurante Mexicano en Calella"
+          title="Mapa de El Comal en Calella"
           src="https://www.google.com/maps?q=Carrer+de+la+Riera+16,+08370+Calella,+Barcelona&output=embed"
-          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACTO -->
-  <section class="section cta-section" id="contacto">
-    <div class="container cta-inner">
-      <h2>¿Listo para tu próxima comida mexicana?</h2>
-      <p>Reserva tu mesa por teléfono o pásate a probar nuestros tacos, sin reserva también te atendemos con gusto.</p>
-      <div class="hero-cta">
-        <a class="btn btn-primary" href="tel:+34685544753">📞 685 54 47 53</a>
-        <a class="btn btn-outline" href="https://www.instagram.com/elcomal.restaurant" target="_blank" rel="noopener">📷 @elcomal.restaurant</a>
       </div>
     </div>
   </section>
 
 </main>
 
+<!-- FOOTER -->
 <footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="brand footer-brand">
-      <span class="brand-mark">🌵</span>
-      <span class="brand-text">El Comal<em>Restaurante Mexicano</em></span>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="wordmark">EL COMAL</span>
+      <p data-i18n="footer.desc">Cocina ancestral oaxaqueña en el corazón de Calella.</p>
     </div>
-    <p>Carrer de la Riera, 16, 08370 Calella, Barcelona · 685 54 47 53</p>
-    <p class="footer-social"><a href="https://www.instagram.com/elcomal.restaurant" target="_blank" rel="noopener">Instagram</a></p>
-    <p class="footer-copy">© <span id="year"></span> El Comal Restaurante Mexicano. Todos los derechos reservados.</p>
+
+    <nav class="footer-nav" aria-label="Navegación del pie de página">
+      <a href="#top" data-i18n="nav.home">Inicio</a>
+      <a href="#cocina" data-i18n="nav.kitchen">Nuestra cocina</a>
+      <a href="#carta" data-i18n="nav.menu">Carta</a>
+      <a href="#galeria" data-i18n="nav.gallery">Galería</a>
+      <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+    </nav>
+
+    <div class="footer-contact">
+      <p>Carrer de la Riera, 16, 08370 Calella</p>
+      <p><a href="tel:+34685544753">685 54 47 53</a></p>
+      <p><a href="https://www.instagram.com/elcomal.restaurant" target="_blank" rel="noopener">Instagram · @elcomal.restaurant</a></p>
+      <p data-i18n="location.hoursValue">Abre a las 19:00 · El horario puede variar en Día de Cataluña</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> El Comal. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
   </div>
 </footer>
 
-<a class="floating-call" href="tel:+34685544753" aria-label="Llamar al restaurante">📞</a>
+<a class="floating-call" href="tel:+34685544753" aria-label="Llamar al restaurante">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+</a>
 
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada" hidden>
+  <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">✕</button>
+  <div class="lightbox-panel" id="lightboxPanel"></div>
+</div>
+
+<script src="assets/js/i18n.js"></script>
 <script src="assets/js/script.js"></script>
 </body>
 </html>
