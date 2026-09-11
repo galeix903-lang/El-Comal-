@@ -123,14 +123,36 @@
     </div>
 
     <div class="hero-content">
-      <p class="hero-eyebrow reveal" data-i18n="hero.eyebrow">Calella · Barcelona</p>
-      <h1 class="hero-title reveal">EL COMAL</h1>
-      <p class="hero-kicker reveal" data-i18n="hero.kicker">Cocina ancestral oaxaqueña</p>
-      <p class="hero-tagline reveal" data-i18n="hero.tagline">El fuego, la tortilla y la paciencia de Oaxaca, servidos frente al Maresme.</p>
+      <svg class="hero-seal reveal" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="47" stroke="currentColor" stroke-width="1" fill="none"/>
+        <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="0.6" fill="none" opacity="0.55"/>
+        <path id="sealTopArc" d="M 12 50 A 38 38 0 0 1 88 50" fill="none"/>
+        <path id="sealBottomArc" d="M 12 54 A 38 38 0 0 0 88 54" fill="none"/>
+        <text font-size="7.6" letter-spacing="2.2" fill="currentColor" font-family="Inter, sans-serif" font-weight="700">
+          <textPath href="#sealTopArc" startOffset="50%" text-anchor="middle">EL COMAL</textPath>
+        </text>
+        <text font-size="5.4" letter-spacing="1.6" fill="currentColor" font-family="Inter, sans-serif" font-weight="600">
+          <textPath href="#sealBottomArc" startOffset="50%" text-anchor="middle">CALELLA · OAXACA</textPath>
+        </text>
+        <g transform="translate(50,53)" fill="currentColor" opacity="0.9">
+          <path d="M0,-13 C5,-13 6,-6 4,2 C3,8 1,13 0,13 C-1,13 -3,8 -4,2 C-6,-6 -5,-13 0,-13 Z"/>
+          <path d="M0,-13 C-3,-16 -6,-14.5 -5.5,-11.5" stroke="currentColor" stroke-width="1.1" fill="none" stroke-linecap="round"/>
+        </g>
+      </svg>
+      <p class="hero-eyebrow reveal" data-i18n="hero.eyebrow">Restaurante mexicano · Calella, Barcelona</p>
+      <h1 class="hero-title reveal" data-i18n-html="hero.title">Cocina oaxaqueña de verdad, <em>hecha con alma</em>.</h1>
+      <p class="hero-tagline reveal" data-i18n="hero.tagline">Recetas familiares de Oaxaca, elaboradas a diario por Doña Elena, frente al Maresme.</p>
+
+      <div class="hero-rating reveal">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <strong>4,8</strong>
+        <span class="dim">· 128 <span data-i18n="hero.ratingText">reseñas en Google</span></span>
+      </div>
 
       <div class="hero-cta reveal">
-        <a class="btn btn-primary btn-lg" href="tel:+34685544753" data-i18n="hero.cta1">Reservar mesa</a>
-        <a class="btn btn-outline btn-lg" href="#carta" data-i18n="hero.cta2">Ver la carta</a>
+        <a class="btn btn-primary btn-lg" href="https://wa.me/34685544753" target="_blank" rel="noopener" data-i18n="hero.ctaWhatsapp">Reservar por WhatsApp</a>
+        <a class="btn btn-outline btn-lg" href="tel:+34685544753" data-i18n="hero.ctaCall">Llamar al 685 54 47 53</a>
+        <a class="hero-cta-link" href="#carta" data-i18n="hero.ctaMenu">Ver la carta →</a>
       </div>
     </div>
 
