@@ -281,6 +281,29 @@ h2{ font-size:clamp(1.9rem, 3.6vw, 2.9rem); margin:0; text-wrap:balance; color:v
 }
 
 /* =========================================================
+   History / About
+========================================================= */
+.history{ padding:120px 0; background:var(--paper-2); }
+.history-inner{
+  max-width:1280px; margin:0 auto; padding:0 24px;
+  display:grid; grid-template-columns:1fr 0.85fr; gap:80px; align-items:center;
+}
+.history-copy .history-lead{ font-size:1.12rem; color:var(--ink); margin-top:22px; }
+.history-copy p + p{ margin-top:18px; color:var(--ink-soft); }
+.history-copy h2{ margin-top:6px; }
+.history-details{ display:flex; flex-direction:column; gap:14px; margin-top:30px; }
+.history-details li{
+  display:flex; gap:12px; align-items:flex-start; font-size:.94rem; color:var(--ink-soft);
+  padding-top:14px; border-top:1px solid var(--line);
+}
+.history-details li::before{ content:'—'; color:var(--red); flex-shrink:0; }
+.history-details strong{ color:var(--ink); font-weight:600; }
+.history-media img{
+  width:100%; aspect-ratio:4/5; object-fit:cover; display:block;
+  border-radius:var(--radius-md); box-shadow:var(--shadow-lg);
+}
+
+/* =========================================================
    Featured dishes (light paper 2)
 ========================================================= */
 .dishes{ padding:110px 24px; background:var(--paper-2); }
@@ -486,6 +509,8 @@ h2{ font-size:clamp(1.9rem, 3.6vw, 2.9rem); margin:0; text-wrap:balance; color:v
 @media (max-width: 1100px){
   .identity-inner{ grid-template-columns:1fr; gap:50px; }
   .identity-media{ order:-1; max-width:420px; margin:0 auto; }
+  .history-inner{ grid-template-columns:1fr; gap:50px; }
+  .history-media{ order:-1; max-width:420px; margin:0 auto; }
   .dish-grid{ grid-template-columns:repeat(2, 1fr); }
   .experience-grid{ grid-template-columns:repeat(2, 1fr); gap:44px; }
   .gallery-grid{ grid-template-columns:repeat(2, 1fr); }
@@ -514,6 +539,9 @@ h2{ font-size:clamp(1.9rem, 3.6vw, 2.9rem); margin:0; text-wrap:balance; color:v
 
   .identity{ padding:80px 0; }
   .identity-inner{ padding:0 20px; }
+
+  .history{ padding:80px 0; }
+  .history-inner{ padding:0 20px; }
 
   .dishes, .experience, .gallery, .menu-section, .reserve-section, .reviews, .location{ padding-inline:20px; }
   .dishes{ padding-block:80px; }
