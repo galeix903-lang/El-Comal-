@@ -45,6 +45,20 @@
     "ratingValue": "4.8",
     "reviewCount": "128"
   },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Thursday", "Friday", "Saturday", "Sunday", "Monday"],
+      "opens": "12:00",
+      "closes": "16:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Thursday", "Friday", "Saturday", "Sunday", "Monday"],
+      "opens": "19:00",
+      "closes": "23:00"
+    }
+  ],
   "sameAs": ["https://www.instagram.com/elcomal.restaurant"]
 }
 </script>
@@ -470,7 +484,11 @@
           </div>
           <div>
             <dt data-i18n="location.hours">Horario</dt>
-            <dd><span data-i18n="location.hoursValue">Abre a las 19:00 · El horario puede variar en Día de Cataluña</span></dd>
+            <dd>
+              <span data-i18n="location.hoursLine1">Jueves a lunes: 12:00–16:00 y 19:00–23:00</span><br>
+              <span data-i18n="location.hoursLine2">Martes y miércoles: cerrado</span><br>
+              <span class="hours-note" data-i18n="location.hoursNote">El horario puede variar en días festivos (p. ej. la Diada de Catalunya).</span>
+            </dd>
           </div>
         </dl>
 
@@ -534,7 +552,7 @@
       <p>Carrer de la Riera, 16, 08370 Calella</p>
       <p><a href="tel:+34685544753">685 54 47 53</a></p>
       <p><a href="https://www.instagram.com/elcomal.restaurant" target="_blank" rel="noopener">Instagram · @elcomal.restaurant</a></p>
-      <p data-i18n="location.hoursValue">Abre a las 19:00 · El horario puede variar en Día de Cataluña</p>
+      <p><span data-i18n="location.hoursLine1">Jueves a lunes: 12:00–16:00 y 19:00–23:00</span> · <span data-i18n="location.hoursLine2">Martes y miércoles: cerrado</span></p>
     </div>
   </div>
 

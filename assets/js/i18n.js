@@ -59,7 +59,8 @@ const I18N = {
     "reviews.cta": "Ver todas las reseñas en Google →",
     "location.eyebrow": "Encuéntranos", "location.sub": "Calella, Barcelona",
     "location.address": "Dirección", "location.phone": "Teléfono", "location.hours": "Horario",
-    "location.hoursValue": "Abre a las 19:00 · El horario puede variar en Día de Cataluña",
+    "location.hoursLine1": "Jueves a lunes: 12:00–16:00 y 19:00–23:00", "location.hoursLine2": "Martes y miércoles: cerrado",
+    "location.hoursNote": "El horario puede variar en días festivos (p. ej. la Diada de Catalunya).",
     "location.directions": "Cómo llegar", "location.reserve": "Reservar",
     "footer.desc": "Cocina ancestral oaxaqueña en el corazón de Calella.", "footer.rights": "Todos los derechos reservados."
   },
@@ -123,7 +124,8 @@ const I18N = {
     "reviews.cta": "Veure totes les ressenyes a Google →",
     "location.eyebrow": "Troba'ns", "location.sub": "Calella, Barcelona",
     "location.address": "Adreça", "location.phone": "Telèfon", "location.hours": "Horari",
-    "location.hoursValue": "Obre a les 19:00 · L'horari pot variar el Dia de Catalunya",
+    "location.hoursLine1": "Dijous a dilluns: 12:00–16:00 i 19:00–23:00", "location.hoursLine2": "Dimarts i dimecres: tancat",
+    "location.hoursNote": "L'horari pot variar en dies festius (p. ex. la Diada de Catalunya).",
     "location.directions": "Com arribar", "location.reserve": "Reservar",
     "footer.desc": "Cuina ancestral oaxaquenya al cor de Calella.", "footer.rights": "Tots els drets reservats."
   },
@@ -187,7 +189,8 @@ const I18N = {
     "reviews.cta": "See all reviews on Google →",
     "location.eyebrow": "Find us", "location.sub": "Calella, Barcelona",
     "location.address": "Address", "location.phone": "Phone", "location.hours": "Hours",
-    "location.hoursValue": "Opens at 7:00 PM · Hours may vary on Catalonia Day",
+    "location.hoursLine1": "Thursday to Monday: 12:00–4:00 PM and 7:00–11:00 PM", "location.hoursLine2": "Closed Tuesday and Wednesday",
+    "location.hoursNote": "Hours may vary on public holidays (e.g. Catalan National Day).",
     "location.directions": "Get directions", "location.reserve": "Reserve",
     "footer.desc": "Ancestral Oaxacan cuisine in the heart of Calella.", "footer.rights": "All rights reserved."
   },
@@ -251,7 +254,8 @@ const I18N = {
     "reviews.cta": "Voir tous les avis sur Google →",
     "location.eyebrow": "Nous trouver", "location.sub": "Calella, Barcelone",
     "location.address": "Adresse", "location.phone": "Téléphone", "location.hours": "Horaires",
-    "location.hoursValue": "Ouvert à partir de 19h · Les horaires peuvent varier le jour de la Catalogne",
+    "location.hoursLine1": "Jeudi à lundi : 12h00–16h00 et 19h00–23h00", "location.hoursLine2": "Fermé le mardi et le mercredi",
+    "location.hoursNote": "Les horaires peuvent varier les jours fériés (ex. la Diada de Catalogne).",
     "location.directions": "Itinéraire", "location.reserve": "Réserver",
     "footer.desc": "Cuisine ancestrale oaxaquénienne au cœur de Calella.", "footer.rights": "Tous droits réservés."
   }

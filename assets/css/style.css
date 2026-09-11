@@ -403,6 +403,7 @@ h2{ font-size:clamp(1.9rem, 3.6vw, 2.9rem); margin:0; text-wrap:balance; color:v
 .location-list{ margin:34px 0; display:flex; flex-direction:column; gap:20px; }
 .location-list dt{ color:var(--forest); font-size:.7rem; text-transform:uppercase; letter-spacing:.12em; font-weight:700; margin-bottom:5px; }
 .location-list dd{ margin:0; color:var(--ink); font-size:1.02rem; }
+.location-list .hours-note{ display:inline-block; margin-top:8px; font-size:.86rem; color:var(--ink-soft); }
 .location-list a{ color:var(--ink); text-decoration:none; }
 .location-actions{ display:flex; gap:18px; flex-wrap:wrap; }
 .location-map{
