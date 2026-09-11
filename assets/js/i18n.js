@@ -106,7 +106,7 @@ const I18N = {
     "location.address": "Dirección", "location.phone": "Teléfono", "location.hours": "Horario",
     "location.hoursLine1": "Jueves a lunes: 12:00–16:00 y 19:00–23:00", "location.hoursLine2": "Martes y miércoles: cerrado",
     "location.hoursNote": "El horario puede variar en días festivos (p. ej. la Diada de Catalunya).",
-    "location.directions": "Cómo llegar", "location.reserve": "Reservar",
+    "location.directions": "Cómo llegar", "location.reserve": "Reservar", "location.openInMaps": "Abrir en Maps",
     "footer.desc": "Cocina ancestral oaxaqueña en el corazón de Calella.", "footer.rights": "Todos los derechos reservados."
   },
   ca: {
@@ -216,7 +216,7 @@ const I18N = {
     "location.address": "Adreça", "location.phone": "Telèfon", "location.hours": "Horari",
     "location.hoursLine1": "Dijous a dilluns: 12:00–16:00 i 19:00–23:00", "location.hoursLine2": "Dimarts i dimecres: tancat",
     "location.hoursNote": "L'horari pot variar en dies festius (p. ex. la Diada de Catalunya).",
-    "location.directions": "Com arribar", "location.reserve": "Reservar",
+    "location.directions": "Com arribar", "location.reserve": "Reservar", "location.openInMaps": "Obre a Maps",
     "footer.desc": "Cuina ancestral oaxaquenya al cor de Calella.", "footer.rights": "Tots els drets reservats."
   },
   en: {
@@ -326,7 +326,7 @@ const I18N = {
     "location.address": "Address", "location.phone": "Phone", "location.hours": "Hours",
     "location.hoursLine1": "Thursday to Monday: 12:00–4:00 PM and 7:00–11:00 PM", "location.hoursLine2": "Closed Tuesday and Wednesday",
     "location.hoursNote": "Hours may vary on public holidays (e.g. Catalan National Day).",
-    "location.directions": "Get directions", "location.reserve": "Reserve",
+    "location.directions": "Get directions", "location.reserve": "Reserve", "location.openInMaps": "Open in Maps",
     "footer.desc": "Ancestral Oaxacan cuisine in the heart of Calella.", "footer.rights": "All rights reserved."
   },
   fr: {
@@ -436,7 +436,7 @@ const I18N = {
     "location.address": "Adresse", "location.phone": "Téléphone", "location.hours": "Horaires",
     "location.hoursLine1": "Jeudi à lundi : 12h00–16h00 et 19h00–23h00", "location.hoursLine2": "Fermé le mardi et le mercredi",
     "location.hoursNote": "Les horaires peuvent varier les jours fériés (ex. la Diada de Catalogne).",
-    "location.directions": "Itinéraire", "location.reserve": "Réserver",
+    "location.directions": "Itinéraire", "location.reserve": "Réserver", "location.openInMaps": "Ouvrir dans Maps",
     "footer.desc": "Cuisine ancestrale oaxaquénienne au cœur de Calella.", "footer.rights": "Tous droits réservés."
   }
 };

@@ -419,12 +419,18 @@ h2{ font-size:clamp(1.9rem, 3.6vw, 2.9rem); margin:0; text-wrap:balance; color:v
 .location-list a{ color:var(--ink); text-decoration:none; }
 .location-actions{ display:flex; gap:18px; flex-wrap:wrap; }
 .location-map{
-  border-radius:var(--radius-md); overflow:hidden; box-shadow:var(--shadow-lg); aspect-ratio:4/3; border:1px solid var(--line);
-  display:flex; align-items:center; justify-content:center; flex-direction:column; gap:16px; text-align:center; padding:32px;
-  background:linear-gradient(155deg, var(--forest), var(--forest-2)); color:var(--cream);
+  position:relative; border-radius:var(--radius-md); overflow:hidden; box-shadow:var(--shadow-lg); aspect-ratio:4/3; border:1px solid var(--line);
+  background:var(--paper-2);
 }
+.location-map iframe{ display:block; width:100%; height:100%; border:0; }
 .location-map .map-pin{ font-size:2.2rem; }
 .location-map p{ margin:0; color:rgba(243,234,217,0.85); max-width:280px; }
+.map-open-btn{
+  position:absolute; top:14px; left:14px; z-index:2; display:inline-flex; align-items:center; gap:7px;
+  background:#fff; color:var(--ink); text-decoration:none; font-size:.78rem; font-weight:600;
+  padding:9px 14px; border-radius:999px; box-shadow:0 4px 14px rgba(0,0,0,0.22); transition:transform .2s var(--ease), box-shadow .2s var(--ease);
+}
+.map-open-btn:hover{ transform:translateY(-1px); box-shadow:0 6px 18px rgba(0,0,0,0.28); }
 
 /* =========================================================
    Footer (dark bookend)
