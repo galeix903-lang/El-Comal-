@@ -72,8 +72,8 @@ const lightboxClose = document.getElementById('lightboxClose');
 
 document.querySelectorAll('.gallery-tile').forEach(tile => {
   tile.addEventListener('click', () => {
-    const panel = tile;
-    lightboxPanel.innerHTML = `<div class="photo-panel ${[...panel.classList].filter(c => c.startsWith('photo-panel--')).join(' ')}">${panel.querySelector('.photo-panel-label').outerHTML}</div>`;
+    const variant = [...tile.classList].find(c => c.startsWith('illo-panel--')) || '';
+    lightboxPanel.innerHTML = `<div class="illo-panel ${variant}">${tile.innerHTML}</div>`;
     lightbox.hidden = false;
     document.body.style.overflow = 'hidden';
   });

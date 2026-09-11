@@ -103,7 +103,24 @@
   <!-- HERO -->
   <section class="hero" id="top">
     <div class="hero-media" aria-hidden="true">
-      <div class="hero-photo hero-photo--fire"></div>
+      <svg class="hero-illustration" viewBox="0 0 800 460" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="heroFlameGrad" cx="50%" cy="100%" r="75%">
+            <stop offset="0%" stop-color="#f2b23c" stop-opacity="0.9"/>
+            <stop offset="45%" stop-color="#ac2b1e" stop-opacity="0.55"/>
+            <stop offset="100%" stop-color="#7a1f12" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <ellipse cx="400" cy="420" rx="360" ry="130" fill="url(#heroFlameGrad)"/>
+        <ellipse cx="400" cy="328" rx="230" ry="46" fill="#1c1712" stroke="#c79a45" stroke-width="3" opacity=".9"/>
+        <ellipse cx="370" cy="298" rx="110" ry="26" fill="none" stroke="#f3ead9" stroke-width="3" opacity=".8"/>
+        <ellipse cx="392" cy="282" rx="100" ry="24" fill="none" stroke="#f3ead9" stroke-width="3" opacity=".65"/>
+        <ellipse cx="408" cy="268" rx="90" ry="22" fill="none" stroke="#f3ead9" stroke-width="3" opacity=".5"/>
+        <path d="M180 260c-20 20-24 55-8 78 14 20 40 24 56 8 14-14 12-38-4-54-4 20-18 24-26 16 10-12 8-30-4-42-6-6-10-6-14-6z" fill="none" stroke="#ac2b1e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M180 260c-6-10-2-22 8-26" fill="none" stroke="#4a7a4f" stroke-width="5" stroke-linecap="round"/>
+        <path d="M620 300c18 16 24 46 10 66-12 18-34 20-48 6-12-12-10-32 4-46-2 16 10 20 18 12-8-10-6-26 4-36 4-4 8-4 12-2z" fill="none" stroke="#ac2b1e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M620 300c4-8 0-18-8-22" fill="none" stroke="#4a7a4f" stroke-width="5" stroke-linecap="round"/>
+      </svg>
       <div class="hero-scrim"></div>
       <div class="hero-grain"></div>
     </div>
@@ -151,12 +168,41 @@
     </div>
   </section>
 
+  <div class="papel-divider papel-divider--on-dark" aria-hidden="true">
+    <svg viewBox="0 0 320 44" preserveAspectRatio="none" focusable="false">
+      <line x1="0" y1="4" x2="320" y2="4" stroke="#6b5940" stroke-width="1.5"/>
+      <path d="M4 4 L36 4 L20 38 Z" fill="#ac2b1e" stroke="#6b5940" stroke-width="1"/>
+      <path d="M44 4 L76 4 L60 38 Z" fill="#faf4e6" stroke="#6b5940" stroke-width="1"/>
+      <path d="M84 4 L116 4 L100 38 Z" fill="#2f5233" stroke="#6b5940" stroke-width="1"/>
+      <path d="M124 4 L156 4 L140 38 Z" fill="#c79a45" stroke="#6b5940" stroke-width="1"/>
+      <path d="M164 4 L196 4 L180 38 Z" fill="#ac2b1e" stroke="#6b5940" stroke-width="1"/>
+      <path d="M204 4 L236 4 L220 38 Z" fill="#faf4e6" stroke="#6b5940" stroke-width="1"/>
+      <path d="M244 4 L276 4 L260 38 Z" fill="#2f5233" stroke="#6b5940" stroke-width="1"/>
+      <path d="M284 4 L316 4 L300 38 Z" fill="#c79a45" stroke="#6b5940" stroke-width="1"/>
+      <circle cx="20" cy="14" r="2" fill="rgba(0,0,0,.18)"/><circle cx="20" cy="24" r="2" fill="rgba(0,0,0,.18)"/>
+      <circle cx="60" cy="14" r="2" fill="rgba(0,0,0,.18)"/><circle cx="60" cy="24" r="2" fill="rgba(0,0,0,.18)"/>
+      <circle cx="100" cy="14" r="2" fill="rgba(0,0,0,.18)"/><circle cx="100" cy="24" r="2" fill="rgba(0,0,0,.18)"/>
+      <circle cx="140" cy="14" r="2" fill="rgba(0,0,0,.18)"/><circle cx="140" cy="24" r="2" fill="rgba(0,0,0,.18)"/>
+      <circle cx="180" cy="14" r="2" fill="rgba(0,0,0,.18)"/><circle cx="180" cy="24" r="2" fill="rgba(0,0,0,.18)"/>
+      <circle cx="220" cy="14" r="2" fill="rgba(0,0,0,.18)"/><circle cx="220" cy="24" r="2" fill="rgba(0,0,0,.18)"/>
+      <circle cx="260" cy="14" r="2" fill="rgba(0,0,0,.18)"/><circle cx="260" cy="24" r="2" fill="rgba(0,0,0,.18)"/>
+      <circle cx="300" cy="14" r="2" fill="rgba(0,0,0,.18)"/><circle cx="300" cy="24" r="2" fill="rgba(0,0,0,.18)"/>
+    </svg>
+  </div>
+
   <!-- IDENTITY / COCINA -->
   <section class="identity" id="cocina">
     <div class="identity-inner">
       <div class="identity-media reveal">
-        <div class="photo-panel photo-panel--metate">
-          <span class="photo-panel-label" data-i18n="identity.photoLabel">Mole hecho a mano, a fuego lento</span>
+        <div class="illo-panel illo-panel--charcoal">
+          <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="100" cy="120" rx="72" ry="18" stroke="currentColor" stroke-width="4" opacity=".9"/>
+            <ellipse cx="88" cy="104" rx="34" ry="10" stroke="currentColor" stroke-width="3.5" opacity=".8"/>
+            <ellipse cx="102" cy="94" rx="26" ry="8" stroke="currentColor" stroke-width="3.5" opacity=".6"/>
+            <path d="M45 130c-6 14 2 26 14 26M155 130c6 14-2 26-14 26" stroke="#ac2b1e" stroke-width="4" stroke-linecap="round"/>
+            <path d="M60 150c14 22 66 22 80 0" stroke="#c79a45" stroke-width="3.5" stroke-linecap="round" opacity=".7"/>
+          </svg>
+          <span class="illo-panel-label" data-i18n="identity.photoLabel">Mole hecho a mano, a fuego lento</span>
         </div>
       </div>
 
@@ -184,8 +230,9 @@
 
     <div class="dish-grid">
       <article class="dish-card reveal">
-        <div class="dish-photo photo-panel photo-panel--pastor">
-          <span class="photo-panel-label" data-i18n="dishes.pastor.tag">Al carbón</span>
+        <div class="dish-photo illo-panel illo-panel--red">
+          <svg viewBox="0 0 120 120" fill="none"><path d="M15 70a45 30 0 0190 0" stroke="currentColor" stroke-width="6" stroke-linecap="round"/><path d="M20 68c8-6 16-9 40-9s32 3 40 9" stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity=".7"/><circle cx="45" cy="60" r="3" fill="currentColor"/><circle cx="60" cy="56" r="3" fill="currentColor"/><circle cx="75" cy="61" r="3" fill="currentColor"/><path d="M55 30l5-14 5 14z" fill="currentColor" opacity=".8"/></svg>
+          <span class="illo-panel-label" data-i18n="dishes.pastor.tag">Al carbón</span>
         </div>
         <div class="dish-info">
           <h3 data-i18n="dishes.pastor.name">Tacos al pastor</h3>
@@ -194,8 +241,9 @@
       </article>
 
       <article class="dish-card reveal">
-        <div class="dish-photo photo-panel photo-panel--birria">
-          <span class="photo-panel-label" data-i18n="dishes.birria.tag">El favorito de la casa</span>
+        <div class="dish-photo illo-panel illo-panel--forest">
+          <svg viewBox="0 0 120 120" fill="none"><path d="M20 55h80a40 25 0 01-80 0z" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/><path d="M35 40q5-10 15-4M55 36q5-10 15-4M75 40q5-10 15-4" stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity=".6"/></svg>
+          <span class="illo-panel-label" data-i18n="dishes.birria.tag">El favorito de la casa</span>
         </div>
         <div class="dish-info">
           <h3 data-i18n="dishes.birria.name">Tacos de birria</h3>
@@ -204,8 +252,9 @@
       </article>
 
       <article class="dish-card reveal">
-        <div class="dish-photo photo-panel photo-panel--cochinita">
-          <span class="photo-panel-label" data-i18n="dishes.cochinita.tag">Tradición yucateca</span>
+        <div class="dish-photo illo-panel illo-panel--gold">
+          <svg viewBox="0 0 120 120" fill="none"><circle cx="60" cy="60" r="35" stroke="currentColor" stroke-width="6"/><path d="M60 25v70M60 25a35 35 0 0130 52M60 25a35 35 0 00-30 52M60 95a35 35 0 0030-13M60 95a35 35 0 01-30-13" stroke="currentColor" stroke-width="3" opacity=".6"/></svg>
+          <span class="illo-panel-label" data-i18n="dishes.cochinita.tag">Tradición yucateca</span>
         </div>
         <div class="dish-info">
           <h3 data-i18n="dishes.cochinita.name">Cochinita pibil</h3>
@@ -214,8 +263,9 @@
       </article>
 
       <article class="dish-card reveal">
-        <div class="dish-photo photo-panel photo-panel--mole">
-          <span class="photo-panel-label" data-i18n="dishes.mole.tag">Receta ancestral</span>
+        <div class="dish-photo illo-panel illo-panel--charcoal">
+          <svg viewBox="0 0 120 120" fill="none"><path d="M25 45h70l-6 40a10 10 0 01-10 8H41a10 10 0 01-10-8z" stroke="currentColor" stroke-width="6" stroke-linejoin="round"/><path d="M15 45h90" stroke="currentColor" stroke-width="6" stroke-linecap="round"/><path d="M50 30q5-12 10 0M65 30q5-12 10 0" stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity=".6"/></svg>
+          <span class="illo-panel-label" data-i18n="dishes.mole.tag">Receta ancestral</span>
         </div>
         <div class="dish-info">
           <h3 data-i18n="dishes.mole.name">Mole tradicional</h3>
@@ -264,23 +314,29 @@
     </div>
 
     <div class="gallery-grid" id="galleryGrid">
-      <button class="gallery-tile photo-panel photo-panel--interior span-tall reveal" data-caption-key="gallery.c1">
-        <span class="photo-panel-label" data-i18n="gallery.c1">Comedor con papel picado</span>
+      <button class="gallery-tile illo-panel illo-panel--red span-tall reveal">
+        <svg viewBox="0 0 120 120" fill="none"><line x1="10" y1="20" x2="110" y2="20" stroke="currentColor" stroke-width="2" opacity=".6"/><path d="M15 20h30l-15 34z" fill="currentColor" opacity=".85"/><path d="M50 20h30l-15 34z" fill="currentColor" opacity=".55"/><path d="M85 20h25l-12 30z" fill="currentColor" opacity=".85"/></svg>
+        <span class="illo-panel-label" data-i18n="gallery.c1">Comedor con papel picado</span>
       </button>
-      <button class="gallery-tile photo-panel photo-panel--ingredients reveal" data-caption-key="gallery.c2">
-        <span class="photo-panel-label" data-i18n="gallery.c2">Ingredientes de temporada</span>
+      <button class="gallery-tile illo-panel illo-panel--gold reveal">
+        <svg viewBox="0 0 120 120" fill="none"><line x1="10" y1="20" x2="110" y2="20" stroke="currentColor" stroke-width="2" opacity=".5"/><g stroke="currentColor" stroke-width="5" stroke-linecap="round"><path d="M25 20c-10 8-8 26 4 30 8 2 14-6 10-16-3-8-10-12-14-14z"/><path d="M55 20c-10 8-8 26 4 30 8 2 14-6 10-16-3-8-10-12-14-14z"/><path d="M85 20c-10 8-8 26 4 30 8 2 14-6 10-16-3-8-10-12-14-14z"/></g></svg>
+        <span class="illo-panel-label" data-i18n="gallery.c2">Ingredientes de temporada</span>
       </button>
-      <button class="gallery-tile photo-panel photo-panel--tortillas reveal" data-caption-key="gallery.c3">
-        <span class="photo-panel-label" data-i18n="gallery.c3">Tortillas recién prensadas</span>
+      <button class="gallery-tile illo-panel illo-panel--paper reveal">
+        <svg viewBox="0 0 120 120" fill="none"><ellipse cx="60" cy="70" rx="45" ry="12" stroke="currentColor" stroke-width="6"/><ellipse cx="60" cy="58" rx="34" ry="9" stroke="currentColor" stroke-width="4" opacity=".7"/><ellipse cx="60" cy="48" rx="24" ry="7" stroke="currentColor" stroke-width="4" opacity=".5"/></svg>
+        <span class="illo-panel-label" data-i18n="gallery.c3">Tortillas recién prensadas</span>
       </button>
-      <button class="gallery-tile photo-panel photo-panel--drinks span-tall reveal" data-caption-key="gallery.c4">
-        <span class="photo-panel-label" data-i18n="gallery.c4">Micheladas y margaritas</span>
+      <button class="gallery-tile illo-panel illo-panel--forest span-tall reveal">
+        <svg viewBox="0 0 120 120" fill="none"><path d="M60 100V55" stroke="currentColor" stroke-width="5"/><path d="M60 55c0-20-15-30-15-30M60 55c0-20 15-30 15-30M60 55c-5-22-25-28-25-25M60 55c5-22 25-28 25-25" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><path d="M40 100h40l-4 10H44z" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/></svg>
+        <span class="illo-panel-label" data-i18n="gallery.c4">Micheladas y margaritas</span>
       </button>
-      <button class="gallery-tile photo-panel photo-panel--detail reveal" data-caption-key="gallery.c5">
-        <span class="photo-panel-label" data-i18n="gallery.c5">Detalles de la casa</span>
+      <button class="gallery-tile illo-panel illo-panel--charcoal reveal">
+        <svg viewBox="0 0 120 120" fill="none"><path d="M20 55a40 25 0 0080 0" stroke="currentColor" stroke-width="6" stroke-linecap="round"/><ellipse cx="60" cy="55" rx="40" ry="10" stroke="currentColor" stroke-width="6"/><circle cx="50" cy="52" r="3" fill="currentColor"/><circle cx="62" cy="50" r="3" fill="currentColor"/><circle cx="70" cy="54" r="3" fill="currentColor"/><path d="M75 35l15-15" stroke="currentColor" stroke-width="6" stroke-linecap="round"/></svg>
+        <span class="illo-panel-label" data-i18n="gallery.c5">Detalles de la casa</span>
       </button>
-      <button class="gallery-tile photo-panel photo-panel--terrace reveal" data-caption-key="gallery.c6">
-        <span class="photo-panel-label" data-i18n="gallery.c6">Terraza interior</span>
+      <button class="gallery-tile illo-panel illo-panel--paper reveal">
+        <svg viewBox="0 0 120 120" fill="none"><path d="M60 100V50" stroke="currentColor" stroke-width="8" stroke-linecap="round"/><ellipse cx="60" cy="42" rx="20" ry="26" stroke="currentColor" stroke-width="6"/><ellipse cx="35" cy="65" rx="16" ry="20" stroke="currentColor" stroke-width="6" transform="rotate(-20 35 65)"/><ellipse cx="85" cy="65" rx="16" ry="20" stroke="currentColor" stroke-width="6" transform="rotate(20 85 65)"/></svg>
+        <span class="illo-panel-label" data-i18n="gallery.c6">Terraza interior</span>
       </button>
     </div>
   </section>
@@ -352,7 +408,7 @@
     </div>
 
     <div class="menu-cta reveal">
-      <a class="btn btn-outline" href="tel:+34685544753" data-i18n="menu.cta">Ver carta completa</a>
+      <a class="btn btn-outline--dark" href="tel:+34685544753" data-i18n="menu.cta">Ver carta completa</a>
     </div>
   </section>
 
@@ -409,7 +465,7 @@
     </div>
 
     <div class="reviews-cta reveal">
-      <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=El+Comal+Restaurante+Mexicano+Carrer+de+la+Riera+16+Calella" target="_blank" rel="noopener" data-i18n="reviews.cta">Ver todas las reseñas en Google →</a>
+      <a class="btn btn-outline--dark" href="https://www.google.com/maps/search/?api=1&query=El+Comal+Restaurante+Mexicano+Carrer+de+la+Riera+16+Calella" target="_blank" rel="noopener" data-i18n="reviews.cta">Ver todas las reseñas en Google →</a>
     </div>
   </section>
 
@@ -438,7 +494,7 @@
 
         <div class="location-actions">
           <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&destination=Carrer+de+la+Riera+16+08370+Calella+Barcelona" target="_blank" rel="noopener" data-i18n="location.directions">Cómo llegar</a>
-          <a class="btn btn-outline" href="tel:+34685544753" data-i18n="location.reserve">Reservar</a>
+          <a class="btn btn-outline--dark" href="tel:+34685544753" data-i18n="location.reserve">Reservar</a>
         </div>
       </div>
 
@@ -453,6 +509,28 @@
   </section>
 
 </main>
+
+<div class="papel-divider papel-divider--on-light" aria-hidden="true">
+  <svg viewBox="0 0 320 44" preserveAspectRatio="none" focusable="false">
+    <line x1="0" y1="4" x2="320" y2="4" stroke="#6b5940" stroke-width="1.5"/>
+    <path d="M4 4 L36 4 L20 38 Z" fill="#c79a45" stroke="#6b5940" stroke-width="1"/>
+    <path d="M44 4 L76 4 L60 38 Z" fill="#2f5233" stroke="#6b5940" stroke-width="1"/>
+    <path d="M84 4 L116 4 L100 38 Z" fill="#faf4e6" stroke="#6b5940" stroke-width="1"/>
+    <path d="M124 4 L156 4 L140 38 Z" fill="#ac2b1e" stroke="#6b5940" stroke-width="1"/>
+    <path d="M164 4 L196 4 L180 38 Z" fill="#c79a45" stroke="#6b5940" stroke-width="1"/>
+    <path d="M204 4 L236 4 L220 38 Z" fill="#2f5233" stroke="#6b5940" stroke-width="1"/>
+    <path d="M244 4 L276 4 L260 38 Z" fill="#faf4e6" stroke="#6b5940" stroke-width="1"/>
+    <path d="M284 4 L316 4 L300 38 Z" fill="#ac2b1e" stroke="#6b5940" stroke-width="1"/>
+    <circle cx="20" cy="14" r="2" fill="rgba(0,0,0,.18)"/><circle cx="20" cy="24" r="2" fill="rgba(0,0,0,.18)"/>
+    <circle cx="60" cy="14" r="2" fill="rgba(0,0,0,.18)"/><circle cx="60" cy="24" r="2" fill="rgba(0,0,0,.18)"/>
+    <circle cx="100" cy="14" r="2" fill="rgba(0,0,0,.18)"/><circle cx="100" cy="24" r="2" fill="rgba(0,0,0,.18)"/>
+    <circle cx="140" cy="14" r="2" fill="rgba(0,0,0,.18)"/><circle cx="140" cy="24" r="2" fill="rgba(0,0,0,.18)"/>
+    <circle cx="180" cy="14" r="2" fill="rgba(0,0,0,.18)"/><circle cx="180" cy="24" r="2" fill="rgba(0,0,0,.18)"/>
+    <circle cx="220" cy="14" r="2" fill="rgba(0,0,0,.18)"/><circle cx="220" cy="24" r="2" fill="rgba(0,0,0,.18)"/>
+    <circle cx="260" cy="14" r="2" fill="rgba(0,0,0,.18)"/><circle cx="260" cy="24" r="2" fill="rgba(0,0,0,.18)"/>
+    <circle cx="300" cy="14" r="2" fill="rgba(0,0,0,.18)"/><circle cx="300" cy="24" r="2" fill="rgba(0,0,0,.18)"/>
+  </svg>
+</div>
 
 <!-- FOOTER -->
 <footer class="site-footer">
