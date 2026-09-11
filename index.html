@@ -18,7 +18,7 @@
 <meta property="og:locale:alternate" content="fr_FR">
 <meta property="og:site_name" content="El Comal">
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%B6%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,340;0,9..144,480;0,9..144,600;1,9..144,440&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -70,7 +70,9 @@
 <!-- NAVBAR -->
 <header class="navbar" id="navbar">
   <div class="navbar-inner">
-    <a class="wordmark" href="#top">EL COMAL</a>
+    <a class="brand-logo" href="#top" aria-label="El Comal — Inicio">
+      <img src="assets/img/logo-64.png" alt="El Comal Calella" width="44" height="44" loading="eager" decoding="async">
+    </a>
 
     <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
       <a href="#top" data-i18n="nav.home">Inicio</a>
@@ -123,22 +125,7 @@
     </div>
 
     <div class="hero-content">
-      <svg class="hero-seal reveal" viewBox="0 0 100 100" aria-hidden="true">
-        <circle cx="50" cy="50" r="47" stroke="currentColor" stroke-width="1" fill="none"/>
-        <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="0.6" fill="none" opacity="0.55"/>
-        <path id="sealTopArc" d="M 12 50 A 38 38 0 0 1 88 50" fill="none"/>
-        <path id="sealBottomArc" d="M 12 54 A 38 38 0 0 0 88 54" fill="none"/>
-        <text font-size="7.6" letter-spacing="2.2" fill="currentColor" font-family="Inter, sans-serif" font-weight="700">
-          <textPath href="#sealTopArc" startOffset="50%" text-anchor="middle">EL COMAL</textPath>
-        </text>
-        <text font-size="5.4" letter-spacing="1.6" fill="currentColor" font-family="Inter, sans-serif" font-weight="600">
-          <textPath href="#sealBottomArc" startOffset="50%" text-anchor="middle">CALELLA · OAXACA</textPath>
-        </text>
-        <g transform="translate(50,53)" fill="currentColor" opacity="0.9">
-          <path d="M0,-13 C5,-13 6,-6 4,2 C3,8 1,13 0,13 C-1,13 -3,8 -4,2 C-6,-6 -5,-13 0,-13 Z"/>
-          <path d="M0,-13 C-3,-16 -6,-14.5 -5.5,-11.5" stroke="currentColor" stroke-width="1.1" fill="none" stroke-linecap="round"/>
-        </g>
-      </svg>
+      <img class="hero-seal reveal" src="assets/img/logo-192.png" alt="El Comal Calella" width="96" height="96" loading="eager" decoding="async">
       <p class="hero-eyebrow reveal" data-i18n="hero.eyebrow">Restaurante mexicano · Calella, Barcelona</p>
       <h1 class="hero-title reveal" data-i18n-html="hero.title">Cocina oaxaqueña de verdad, <em>hecha con alma</em>.</h1>
       <p class="hero-tagline reveal" data-i18n="hero.tagline">Recetas familiares de Oaxaca, elaboradas a diario por Doña Elena, frente al Maresme.</p>
@@ -739,7 +726,10 @@
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-brand">
-      <span class="wordmark">EL COMAL</span>
+      <div class="footer-brand-lockup">
+        <img src="assets/img/logo-64.png" alt="El Comal Calella" width="40" height="40" loading="lazy" decoding="async">
+        <span class="wordmark">EL COMAL</span>
+      </div>
       <p data-i18n="footer.desc">Cocina ancestral oaxaqueña en el corazón de Calella.</p>
     </div>
 
