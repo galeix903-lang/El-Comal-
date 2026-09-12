@@ -111,7 +111,7 @@ p{ margin:0; }
 }
 .section-sub{ color:var(--ink-soft); margin-top:14px; max-width:480px; }
 .section-head.center .section-sub{ margin-inline:auto; }
-h2{ font-size:clamp(2.3rem, 4.4vw, 3.6rem); margin:0; text-wrap:balance; color:var(--red); }
+h2{ font-size:clamp(2.6rem, 5vw, 4rem); margin:0; text-wrap:balance; color:var(--red); }
 
 /* =========================================================
    Reveal-on-scroll
@@ -341,19 +341,33 @@ h2{ font-size:clamp(2.3rem, 4.4vw, 3.6rem); margin:0; text-wrap:balance; color:v
 }
 .dish-card:hover .dish-photo{ transform:translateY(-6px); box-shadow:var(--shadow-lg); }
 .dish-info{ padding-top:20px; }
-.dish-info h3{ font-size:1.2rem; margin:0 0 8px; color:var(--ink); }
+.dish-info h3{ font-size:1.35rem; margin:0 0 8px; color:var(--ink); }
 .dish-info p{ color:var(--ink-soft); font-size:.9rem; }
 
 /* =========================================================
    Experience (light paper)
 ========================================================= */
 .experience{ padding:110px 24px; background:var(--paper); }
-.experience-grid{
-  max-width:1100px; margin:0 auto; display:grid; grid-template-columns:repeat(4, 1fr); gap:40px;
+.experience-logo{
+  width:48px; height:48px; margin:0 auto 16px; display:block; border-radius:50%;
+  filter:drop-shadow(0 4px 10px rgba(20,14,8,.2));
 }
-.experience-item{ text-align:center; }
-.experience-mark{ display:block; color:var(--red); font-size:1rem; margin-bottom:18px; }
-.experience-item h3{ font-size:1.1rem; margin:0 0 10px; color:var(--ink); }
+.experience-layout{
+  max-width:1100px; margin:0 auto; display:grid; grid-template-columns:260px 1fr; gap:56px; align-items:center;
+}
+.experience-photo img{
+  width:100%; aspect-ratio:4/5; object-fit:cover; display:block;
+  border-radius:var(--radius-md); box-shadow:var(--shadow-lg);
+}
+.experience-grid{ display:grid; grid-template-columns:repeat(2, 1fr); gap:36px 32px; }
+.experience-item{ text-align:center; transition:transform .3s var(--ease); }
+.experience-item:hover{ transform:translateY(-6px); }
+.experience-mark{
+  display:block; color:var(--red); font-size:1rem; margin-bottom:18px;
+  transition:transform .3s var(--ease), color .3s var(--ease);
+}
+.experience-item:hover .experience-mark{ color:var(--gold); transform:scale(1.25); }
+.experience-item h3{ font-size:1.4rem; margin:0 0 10px; color:var(--ink); }
 .experience-item p{ color:var(--ink-soft); font-size:.88rem; }
 
 /* =========================================================
@@ -363,7 +377,7 @@ h2{ font-size:clamp(2.3rem, 4.4vw, 3.6rem); margin:0; text-wrap:balance; color:v
 .gallery-head{ margin-bottom:64px; }
 .gallery-head .eyebrow{ font-size:.8rem; letter-spacing:.24em; }
 .gallery-head h2{
-  font-size:clamp(2.9rem, 6.6vw, 4.6rem);
+  font-size:clamp(3.1rem, 7vw, 4.9rem);
   font-style:italic;
 }
 .gallery-head-flourish{
@@ -438,7 +452,7 @@ h2{ font-size:clamp(2.3rem, 4.4vw, 3.6rem); margin:0; text-wrap:balance; color:v
   padding:8px 18px; border:1.5px solid var(--red); border-radius:2px;
 }
 .reserve-inner{ max-width:620px; margin:0 auto; }
-.reserve-inner h2{ font-size:clamp(2.6rem, 5.6vw, 4rem); margin-top:6px; color:var(--red); }
+.reserve-inner h2{ font-size:clamp(2.9rem, 6vw, 4.3rem); margin-top:6px; color:var(--red); }
 .reserve-inner p{ color:rgba(243,234,217,0.85); margin-top:20px; }
 .reserve-inner .btn-xl{
   box-shadow:0 12px 34px rgba(172,43,30,.5), 0 0 0 1px rgba(255,255,255,.08) inset;
@@ -480,7 +494,7 @@ h2{ font-size:clamp(2.3rem, 4.4vw, 3.6rem); margin:0; text-wrap:balance; color:v
   max-width:1280px; margin:0 auto; padding:0 24px 120px;
   display:grid; grid-template-columns:1fr 1fr; gap:70px; align-items:center;
 }
-.location-copy h2{ font-size:clamp(2.6rem, 5.6vw, 3.8rem); margin-top:6px; letter-spacing:.04em; color:var(--red); }
+.location-copy h2{ font-size:clamp(2.9rem, 6vw, 4.1rem); margin-top:6px; letter-spacing:.04em; color:var(--red); }
 .location-sub{ color:var(--red); margin-top:8px; font-family:'Fraunces',serif; font-style:italic; font-size:1.1rem; }
 .location-list{ margin:34px 0; display:flex; flex-direction:column; gap:20px; }
 .location-list dt{ color:var(--forest); font-size:.7rem; text-transform:uppercase; letter-spacing:.12em; font-weight:700; margin-bottom:5px; }
@@ -562,7 +576,8 @@ h2{ font-size:clamp(2.3rem, 4.4vw, 3.6rem); margin:0; text-wrap:balance; color:v
   .history-inner{ grid-template-columns:1fr; gap:50px; }
   .history-media{ order:-1; max-width:420px; margin:0 auto; }
   .dish-grid{ grid-template-columns:repeat(2, 1fr); }
-  .experience-grid{ grid-template-columns:repeat(2, 1fr); gap:44px; }
+  .experience-layout{ grid-template-columns:1fr; gap:40px; }
+  .experience-photo{ max-width:320px; margin:0 auto; }
   .gallery-grid{ grid-template-columns:repeat(2, 1fr); }
   .reviews-editorial{ grid-template-columns:1fr; }
   .location-inner{ grid-template-columns:1fr; }
