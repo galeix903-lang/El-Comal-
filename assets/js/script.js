@@ -99,7 +99,28 @@ document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !lightbo
 if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
   document.body.classList.add('has-custom-cursor');
   const customCursor = document.getElementById('customCursor');
+  let cursorX = 0, cursorY = 0, cursorTick = false;
   document.addEventListener('mousemove', (e) => {
-    customCursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+    cursorX = e.clientX;
+    cursorY = e.clientY;
+    if (!cursorTick) {
+      cursorTick = true;
+      requestAnimationFrame(() => {
+        customCursor.style.transform = `translate(${cursorX}px, ${cursorY}px)`;
+        cursorTick = false;
+      });
+    }
   });
+}
+
+/* ---------- Pause hero Ken Burns animation when off-screen ---------- */
+const heroSection = document.querySelector('.hero');
+const heroPhoto = document.querySelector('.hero-photo');
+if (heroSection && heroPhoto && 'IntersectionObserver' in window) {
+  const heroIO = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      heroPhoto.style.animationPlayState = entry.isIntersecting ? 'running' : 'paused';
+    });
+  }, { threshold: 0 });
+  heroIO.observe(heroSection);
 }
