@@ -363,11 +363,6 @@ h2{ font-size:clamp(2.6rem, 5vw, 4rem); margin:0; text-wrap:balance; color:var(-
   width:48px; height:48px; margin:0 auto 16px; display:block; border-radius:50%;
   filter:drop-shadow(0 4px 10px rgba(20,14,8,.2));
 }
-.experience-title-row{ display:flex; align-items:center; justify-content:center; gap:22px; flex-wrap:wrap; }
-.experience-flag{
-  width:46px; height:auto; border-radius:4px; flex-shrink:0;
-  box-shadow:0 3px 10px rgba(20,14,8,.25);
-}
 .experience-layout{
   max-width:1100px; margin:0 auto; display:grid; grid-template-columns:260px 1fr; gap:56px; align-items:center;
 }
@@ -661,8 +656,6 @@ h2{ font-size:clamp(2.6rem, 5vw, 4rem); margin:0; text-wrap:balance; color:var(-
 
   .experience{ padding-block:80px; }
   .experience-grid{ grid-template-columns:1fr; gap:38px; }
-  .experience-flag{ width:32px; }
-  .experience-title-row{ gap:12px; }
 
   .gallery{ padding-block:80px 90px; }
   .gallery-grid{ grid-template-columns:1fr; gap:16px; }
