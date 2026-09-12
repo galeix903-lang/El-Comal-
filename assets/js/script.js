@@ -95,13 +95,11 @@ lightboxClose.addEventListener('click', closeLightbox);
 lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
 document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !lightbox.hidden) closeLightbox(); });
 
-/* ---------- Custom pink cursor (mouse devices only) ---------- */
+/* ---------- Custom cursor (mouse devices only) ---------- */
 if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
-  document.body.classList.add('has-pink-cursor');
-  const pinkCursor = document.getElementById('pinkCursor');
+  document.body.classList.add('has-custom-cursor');
+  const customCursor = document.getElementById('customCursor');
   document.addEventListener('mousemove', (e) => {
-    pinkCursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+    customCursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
   });
-  document.addEventListener('mousedown', () => pinkCursor.classList.add('is-active'));
-  document.addEventListener('mouseup', () => pinkCursor.classList.remove('is-active'));
 }
