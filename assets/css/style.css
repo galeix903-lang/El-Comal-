@@ -343,6 +343,17 @@ h2{ font-size:clamp(1.9rem, 3.6vw, 2.9rem); margin:0; text-wrap:balance; color:v
    Gallery (light paper 2)
 ========================================================= */
 .gallery{ padding:110px 24px 120px; background:var(--paper-2); }
+.gallery-head{ margin-bottom:64px; }
+.gallery-head .eyebrow{ font-size:.8rem; letter-spacing:.24em; }
+.gallery-head h2{
+  font-size:clamp(2.6rem, 6vw, 4.2rem);
+  font-style:italic;
+}
+.gallery-head-flourish{
+  display:block; width:64px; height:3px; margin:22px auto 0;
+  background:linear-gradient(90deg, transparent, var(--gold), transparent);
+  border-radius:999px;
+}
 .gallery-grid{
   max-width:1280px; margin:0 auto; display:grid;
   grid-template-columns:repeat(3, 1fr); gap:22px;
