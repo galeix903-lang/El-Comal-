@@ -425,7 +425,7 @@ h2{ font-size:clamp(2.3rem, 4.4vw, 3.6rem); margin:0; text-wrap:balance; color:v
   padding:120px 24px; text-align:center;
   background:
     radial-gradient(ellipse 70% 100% at 50% 0%, rgba(47,82,51,.85) 0%, rgba(30,58,35,.94) 100%),
-    url('../img/gallery-terrace.jpg') center 35%/cover no-repeat;
+    url('../img/reserve-storefront.jpg') center 15%/cover no-repeat;
   color:var(--cream);
   isolation:isolate;
 }
