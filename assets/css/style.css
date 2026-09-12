@@ -391,9 +391,19 @@ h2{ font-size:clamp(1.9rem, 3.6vw, 2.9rem); margin:0; text-wrap:balance; color:v
    Reserve — bold green flag block, the one saturated section
 ========================================================= */
 .reserve-section{
+  position:relative;
   padding:120px 24px; text-align:center;
-  background:radial-gradient(ellipse 70% 100% at 50% 0%, var(--forest) 0%, var(--forest-2) 100%);
+  background:
+    radial-gradient(ellipse 70% 100% at 50% 0%, rgba(47,82,51,.85) 0%, rgba(30,58,35,.94) 100%),
+    url('../img/gallery-terrace.jpg') center 35%/cover no-repeat;
   color:var(--cream);
+  isolation:isolate;
+}
+.reserve-section::before{
+  content:'';
+  position:absolute; inset:0;
+  background:radial-gradient(ellipse 60% 80% at 50% 100%, rgba(199,154,69,.14), transparent 70%);
+  pointer-events:none; z-index:-1;
 }
 .reserve-section .eyebrow{ color:var(--gold); }
 .reserve-inner{ max-width:620px; margin:0 auto; }
