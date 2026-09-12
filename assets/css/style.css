@@ -433,7 +433,10 @@ h2{ font-size:clamp(2.3rem, 4.4vw, 3.6rem); margin:0; text-wrap:balance; color:v
   background:radial-gradient(ellipse 60% 80% at 50% 100%, rgba(199,154,69,.14), transparent 70%);
   pointer-events:none; z-index:-1;
 }
-.reserve-section .eyebrow{ color:var(--gold); }
+.reserve-section .eyebrow{
+  color:var(--gold); display:inline-block;
+  padding:8px 18px; border:1.5px solid var(--red); border-radius:2px;
+}
 .reserve-inner{ max-width:620px; margin:0 auto; }
 .reserve-inner h2{ font-size:clamp(2.6rem, 5.6vw, 4rem); margin-top:6px; color:var(--red); }
 .reserve-inner p{ color:rgba(243,234,217,0.85); margin-top:20px; }
