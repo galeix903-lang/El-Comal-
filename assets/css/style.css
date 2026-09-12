@@ -109,6 +109,11 @@ p{ margin:0; }
   color:var(--forest); text-transform:uppercase; letter-spacing:.18em; font-size:.72rem;
   font-weight:700; margin:0 0 14px; font-family:'Inter',sans-serif;
 }
+.section-logo{
+  display:block; width:44px; height:44px; margin-bottom:14px; border-radius:50%;
+  filter:drop-shadow(0 4px 10px rgba(20,14,8,.2));
+}
+.section-head.center .section-logo{ margin:0 auto 14px; }
 .section-sub{ color:var(--ink-soft); margin-top:14px; max-width:480px; }
 .section-head.center .section-sub{ margin-inline:auto; }
 h2{ font-size:clamp(2.6rem, 5vw, 4rem); margin:0; text-wrap:balance; color:var(--red); }
