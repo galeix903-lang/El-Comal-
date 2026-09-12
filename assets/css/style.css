@@ -437,6 +437,13 @@ h2{ font-size:clamp(2.6rem, 5vw, 4rem); margin:0; text-wrap:balance; color:var(-
 }
 
 /* =========================================================
+   Instagram CTA
+========================================================= */
+.instagram-cta{ padding:70px 24px; background:var(--paper-2); text-align:center; }
+.instagram-cta-inner{ max-width:520px; margin:0 auto; }
+.instagram-cta p{ color:var(--ink-soft); margin-bottom:22px; font-size:1.05rem; }
+
+/* =========================================================
    Menu (light paper)
 ========================================================= */
 .menu-section{ padding:120px 24px; background:var(--paper); }
