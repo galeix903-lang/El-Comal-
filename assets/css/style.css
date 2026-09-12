@@ -367,8 +367,8 @@ h2{ font-size:clamp(2.6rem, 5vw, 4rem); margin:0; text-wrap:balance; color:var(-
   transition:transform .3s var(--ease), color .3s var(--ease);
 }
 .experience-item:hover .experience-mark{ color:var(--gold); transform:scale(1.25); }
-.experience-item h3{ font-size:1.4rem; margin:0 0 10px; color:var(--ink); }
-.experience-item p{ color:var(--ink-soft); font-size:.88rem; }
+.experience-item h3{ font-size:1.75rem; margin:0 0 12px; color:var(--ink); }
+.experience-item p{ color:var(--ink-soft); font-size:.94rem; }
 
 /* =========================================================
    Gallery (light paper 2)
