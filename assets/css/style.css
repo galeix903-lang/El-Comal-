@@ -28,6 +28,7 @@
   --ease: cubic-bezier(.22,.61,.36,1);
   --radius-sm: 4px;
   --radius-md: 10px;
+  --pink: #ff5fae;
 }
 
 *, *::before, *::after{ box-sizing:border-box; }
@@ -36,6 +37,24 @@ html{ scroll-behavior:smooth; }
   html{ scroll-behavior:auto; }
   *{ animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; }
 }
+
+/* =========================================================
+   Custom pink cursor
+========================================================= */
+.pink-cursor{
+  display:none;
+  position:fixed; top:0; left:0; width:22px; height:22px;
+  margin:-11px 0 0 -11px; border-radius:50%;
+  background:var(--pink); border:2px solid #fff;
+  box-shadow:0 2px 10px rgba(255,95,174,0.5);
+  pointer-events:none; z-index:9999;
+  transition:transform .05s linear, width .2s var(--ease), height .2s var(--ease), margin .2s var(--ease);
+  will-change:transform;
+}
+.pink-cursor.is-active{ width:16px; height:16px; margin:-8px 0 0 -8px; }
+body.has-pink-cursor{ cursor:none; }
+body.has-pink-cursor a, body.has-pink-cursor button{ cursor:none; }
+body.has-pink-cursor .pink-cursor{ display:block; }
 
 body{
   margin:0;
