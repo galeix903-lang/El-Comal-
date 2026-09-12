@@ -409,6 +409,12 @@ h2{ font-size:clamp(1.9rem, 3.6vw, 2.9rem); margin:0; text-wrap:balance; color:v
 .reserve-inner{ max-width:620px; margin:0 auto; }
 .reserve-inner h2{ font-size:clamp(2.2rem, 5vw, 3.4rem); margin-top:6px; color:var(--red); }
 .reserve-inner p{ color:rgba(243,234,217,0.85); margin-top:20px; }
+.reserve-inner .btn-xl{
+  box-shadow:0 12px 34px rgba(172,43,30,.5), 0 0 0 1px rgba(255,255,255,.08) inset;
+}
+.reserve-inner .btn-xl:hover{
+  box-shadow:0 14px 40px rgba(172,43,30,.62), 0 0 0 1px rgba(255,255,255,.12) inset;
+}
 .reserve-alt{ display:flex; gap:34px; justify-content:center; flex-wrap:wrap; }
 .reserve-alt a{
   display:inline-flex; align-items:center; gap:10px; text-decoration:none; color:var(--cream-dim);
