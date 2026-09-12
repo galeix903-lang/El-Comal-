@@ -373,7 +373,7 @@ h2{ font-size:clamp(2.3rem, 4.4vw, 3.6rem); margin:0; text-wrap:balance; color:v
 }
 .gallery-grid{
   max-width:1280px; margin:0 auto; display:grid;
-  grid-template-columns:repeat(3, 1fr); gap:22px;
+  grid-template-columns:repeat(4, 1fr); gap:20px;
 }
 .gallery-tile{
   position:relative; border:none; padding:0; cursor:pointer; overflow:hidden;
