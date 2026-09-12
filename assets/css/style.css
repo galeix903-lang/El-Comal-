@@ -514,6 +514,7 @@ h2{ font-size:clamp(2.3rem, 4.4vw, 3.6rem); margin:0; text-wrap:balance; color:v
 .footer-brand-lockup{ display:flex; align-items:center; gap:14px; }
 .footer-brand .wordmark{ font-size:1.5rem; }
 .footer-brand p{ color:var(--cream-dim); margin-top:16px; max-width:280px; }
+.footer-reserve{ margin-top:22px; }
 .footer-nav{ display:flex; flex-direction:column; gap:14px; }
 .footer-nav a{ text-decoration:none; color:var(--cream-dim); font-size:.92rem; transition:color .25s; }
 .footer-nav a:hover{ color:var(--cream); }
