@@ -212,8 +212,8 @@ h2{ font-size:clamp(2.6rem, 5vw, 4rem); margin:0; text-wrap:balance; color:var(-
 }
 .hero-scrim{ position:absolute; inset:0; background:linear-gradient(180deg, rgba(10,8,6,0.72) 0%, rgba(10,8,6,0.6) 45%, rgba(10,8,6,0.8) 100%); }
 .hero-grain{
-  position:absolute; inset:0; opacity:.4; mix-blend-mode:overlay;
-  background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px);
+  position:absolute; inset:0; opacity:.5;
+  background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
   background-size: 3px 3px;
 }
 
