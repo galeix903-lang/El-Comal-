@@ -95,24 +95,6 @@ lightboxClose.addEventListener('click', closeLightbox);
 lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
 document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !lightbox.hidden) closeLightbox(); });
 
-/* ---------- Custom cursor (mouse devices only) ---------- */
-if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
-  document.body.classList.add('has-custom-cursor');
-  const customCursor = document.getElementById('customCursor');
-  let cursorX = 0, cursorY = 0, cursorTick = false;
-  document.addEventListener('mousemove', (e) => {
-    cursorX = e.clientX;
-    cursorY = e.clientY;
-    if (!cursorTick) {
-      cursorTick = true;
-      requestAnimationFrame(() => {
-        customCursor.style.transform = `translate(${cursorX}px, ${cursorY}px)`;
-        cursorTick = false;
-      });
-    }
-  });
-}
-
 /* ---------- Pause hero Ken Burns animation when off-screen ---------- */
 const heroSection = document.querySelector('.hero');
 const heroPhoto = document.querySelector('.hero-photo');
