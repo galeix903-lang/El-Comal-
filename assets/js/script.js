@@ -2,6 +2,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
 
 /* ---------- Language ---------- */
 applyLanguage(detectInitialLanguage());
+updateHeroStatus();
 
 const langSwitch = document.getElementById('langSwitch');
 const langCurrent = document.getElementById('langCurrent');
@@ -14,10 +15,50 @@ langCurrent.addEventListener('click', () => {
 langMenu.querySelectorAll('li').forEach(li => {
   li.addEventListener('click', () => {
     applyLanguage(li.getAttribute('data-lang'));
+    updateHeroStatus();
     langSwitch.classList.remove('open');
     langCurrent.setAttribute('aria-expanded', 'false');
   });
 });
+
+/* ---------- Open/closed status (Thu-Mon 12:00-16:00 & 19:00-23:00, Europe/Madrid time) ---------- */
+function isRestaurantOpenNow() {
+  const SCHEDULE = {
+    0: [[720, 960], [1140, 1380]], // Sunday
+    1: [[720, 960], [1140, 1380]], // Monday
+    2: [],                         // Tuesday - closed
+    3: [],                         // Wednesday - closed
+    4: [[720, 960], [1140, 1380]], // Thursday
+    5: [[720, 960], [1140, 1380]], // Friday
+    6: [[720, 960], [1140, 1380]]  // Saturday
+  };
+  const WEEKDAY_MAP = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 };
+  const parts = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'Europe/Madrid', weekday: 'short', hour: '2-digit', minute: '2-digit', hour12: false
+  }).formatToParts(new Date());
+  const map = {};
+  parts.forEach(p => { map[p.type] = p.value; });
+  let hour = parseInt(map.hour, 10);
+  if (hour === 24) hour = 0;
+  const minutes = hour * 60 + parseInt(map.minute, 10);
+  const day = WEEKDAY_MAP[map.weekday];
+  return (SCHEDULE[day] || []).some(([start, end]) => minutes >= start && minutes < end);
+}
+
+function updateHeroStatus() {
+  const heroStatus = document.getElementById('heroStatus');
+  const heroStatusText = document.getElementById('heroStatusText');
+  if (!heroStatus || !heroStatusText) return;
+  const lang = document.documentElement.getAttribute('lang') || 'es';
+  const dict = (typeof I18N !== 'undefined' && I18N[lang]) ? I18N[lang] : {};
+  const open = isRestaurantOpenNow();
+  heroStatus.classList.toggle('is-open', open);
+  heroStatus.classList.toggle('is-closed', !open);
+  heroStatusText.textContent = open
+    ? (dict['hero.statusOpen'] || 'Abierto ahora')
+    : (dict['hero.statusClosed'] || 'Cerrado ahora');
+}
+setInterval(updateHeroStatus, 60000);
 document.addEventListener('click', (e) => {
   if (!langSwitch.contains(e.target)) {
     langSwitch.classList.remove('open');
